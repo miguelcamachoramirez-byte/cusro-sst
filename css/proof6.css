@@ -192,3 +192,32 @@
 #incorrecto6{
     width: 20rem;
 }
+
+/* --------- Fichas SST (adaptación planta de inyección) --------- */
+.contenedorPiezas .fichaSST{
+    width: 5rem !important;
+    height: 5rem !important;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.35);
+    background: transparent;
+}
+
+.fichaLabel{
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.6);
+    white-space: nowrap;
+}
+
+/* El contenedor de destino debe centrar la ficha con su etiqueta */
+.contenedorPieza{
+    align-items: center;
+}
+.contenedorPieza .fichaLabel{
+    font-size: 0.8rem;
+}

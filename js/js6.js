@@ -113,10 +113,10 @@ console.log()
     let hijos = document.querySelectorAll(".contenedorPieza img")
     if(hijos.length == 4){
         
-        if((document.getElementById('pieza1').parentNode.id =='tres') &&
-        (document.getElementById('pieza2').parentNode.id =='dos') &&
-        (document.getElementById('pieza3').parentNode.id =='uno') &&
-        (document.getElementById('pieza4').parentNode.id =='cuatro') && endGame == false
+        if((document.getElementById('pieza1').parentNode.id =='dos') &&
+        (document.getElementById('pieza2').parentNode.id =='cuatro') &&
+        (document.getElementById('pieza3').parentNode.id =='tres') &&
+        (document.getElementById('pieza4').parentNode.id =='uno') && endGame == false
         
         ){  
             setTimeout(() => {
@@ -184,34 +184,32 @@ console.log()
 
             setTimeout(() => {
 
-                if (document.getElementById('pieza1').parentNode.id =='tres') {
-                    console.log("es tres")
-                    gray3.style.background = "linear-gradient(90deg, rgba(103,224,16,1) 0%, rgba(9,121,18,1) 43%, rgba(0,66,18,1) 100%)"
-                } else {
-                    console.log(" no es tres")
-                    document.getElementById("contenedorPieza1").appendChild(document.getElementById("pieza1"));
-                    gray3.style.background = "linear-gradient(90deg, rgba(143,49,49,1) 0%, rgba(75,2,33,1) 100%)"
-                }
-    
-                if (document.getElementById('pieza2').parentNode.id =='dos') {
+                if (document.getElementById('pieza1').parentNode.id =='dos') {
                     gray2.style.background = "linear-gradient(90deg, rgba(103,224,16,1) 0%, rgba(9,121,18,1) 43%, rgba(0,66,18,1) 100%)"
                 } else {
-                    document.getElementById("contenedorPieza2").appendChild(document.getElementById("pieza2"));
+                    document.getElementById("contenedorPieza1").appendChild(document.getElementById("pieza1"));
                     gray2.style.background = "linear-gradient(90deg, rgba(143,49,49,1) 0%, rgba(75,2,33,1) 100%)"
                 }
     
-                if (document.getElementById('pieza3').parentNode.id =='uno') {
-                    gray1.style.background = "linear-gradient(90deg, rgba(103,224,16,1) 0%, rgba(9,121,18,1) 43%, rgba(0,66,18,1) 100%)"
-                } else {
-                    document.getElementById("contenedorPieza3").appendChild(document.getElementById("pieza3"));
-                    gray1.style.background = "linear-gradient(90deg, rgba(143,49,49,1) 0%, rgba(75,2,33,1) 100%)"
-                }
-    
-                if (document.getElementById('pieza4').parentNode.id =='cuatro') {
+                if (document.getElementById('pieza2').parentNode.id =='cuatro') {
                     gray4.style.background = "linear-gradient(90deg, rgba(103,224,16,1) 0%, rgba(9,121,18,1) 43%, rgba(0,66,18,1) 100%)"
                 } else {
-                    document.getElementById("contenedorPieza4").appendChild(document.getElementById("pieza4"));
+                    document.getElementById("contenedorPieza2").appendChild(document.getElementById("pieza2"));
                     gray4.style.background = "linear-gradient(90deg, rgba(143,49,49,1) 0%, rgba(75,2,33,1) 100%)"
+                }
+    
+                if (document.getElementById('pieza3').parentNode.id =='tres') {
+                    gray3.style.background = "linear-gradient(90deg, rgba(103,224,16,1) 0%, rgba(9,121,18,1) 43%, rgba(0,66,18,1) 100%)"
+                } else {
+                    document.getElementById("contenedorPieza3").appendChild(document.getElementById("pieza3"));
+                    gray3.style.background = "linear-gradient(90deg, rgba(143,49,49,1) 0%, rgba(75,2,33,1) 100%)"
+                }
+    
+                if (document.getElementById('pieza4').parentNode.id =='uno') {
+                    gray1.style.background = "linear-gradient(90deg, rgba(103,224,16,1) 0%, rgba(9,121,18,1) 43%, rgba(0,66,18,1) 100%)"
+                } else {
+                    document.getElementById("contenedorPieza4").appendChild(document.getElementById("pieza4"));
+                    gray1.style.background = "linear-gradient(90deg, rgba(143,49,49,1) 0%, rgba(75,2,33,1) 100%)"
                 }
     
                 
