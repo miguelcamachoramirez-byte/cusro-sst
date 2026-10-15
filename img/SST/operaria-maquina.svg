@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 440" width="260" height="440">
+  <defs>
+    <radialGradient id="mej" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff9d8a"/>
+      <stop offset="1" stop-color="#ff9d8a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="130" cy="424" rx="66" ry="12" fill="#c9d2d8" opacity="0.7"/>
+  <!-- cabello a los hombros -->
+  <path d="M80 112 q-22 46 -16 86 q2 16 12 24 l24 -8 q-16 -34 -12 -70 q2 -34 10 -50 z" fill="#5a3a24"/>
+  <path d="M180 112 q22 46 16 86 q-2 16 -12 24 l-24 -8 q16 -34 12 -70 q-2 -34 -10 -50 z" fill="#5a3a24"/>
+  <!-- piernas jeans -->
+  <path d="M104 300 l-6 104 q-1 8 9 8 l12 0 q6 0 6 -8 l2 -104 z" fill="#2f5e86"/>
+  <path d="M156 300 l6 104 q1 8 -9 8 l-12 0 q-6 0 -6 -8 l-2 -104 z" fill="#2f5e86"/>
+  <path d="M110 320 l-4 86 M150 320 l4 86" stroke="#244a6b" stroke-width="2" fill="none"/>
+  <!-- zapatos -->
+  <path d="M92 406 q0 -8 10 -8 h20 q6 0 6 8 v8 q0 6 -8 6 h-22 q-6 0 -6 -6 z" fill="#5b6670"/>
+  <path d="M138 406 q0 -8 10 -8 h20 q6 0 6 8 v8 q0 6 -8 6 h-22 q-6 0 -6 -6 z" fill="#5b6670"/>
+  <!-- camisa + chaleco -->
+  <path d="M92 190 q38 -22 76 0 l10 118 q-48 20 -96 0 z" fill="#f3f5f7"/>
+  <path d="M98 196 q32 -16 64 0 l6 108 q-38 16 -76 0 z" fill="#f6a81c"/>
+  <path d="M126 192 l0 112 M134 192 l0 112" stroke="#f3f5f7" stroke-width="7"/>
+  <rect x="104" y="236" width="52" height="7" fill="#eaf6ff"/>
+  <rect x="104" y="252" width="52" height="7" fill="#eaf6ff"/>
+  <!-- brazos -->
+  <path d="M96 206 q-22 20 -18 56 q2 14 18 16" fill="none" stroke="#f3f5f7" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="98" cy="280" r="11" fill="#4a4f55"/>
+  <path d="M164 206 q24 10 24 40" fill="none" stroke="#f3f5f7" stroke-width="18" stroke-linecap="round"/>
+  <g transform="translate(188 238)"><circle r="13" fill="#4a4f55"/><rect x="-5" y="-24" width="12" height="18" rx="6" fill="#4a4f55"/></g>
+  <!-- cuello -->
+  <rect x="120" y="168" width="20" height="26" rx="8" fill="#f0b98a"/>
+  <!-- cabeza -->
+  <ellipse cx="130" cy="128" rx="52" ry="56" fill="#f6c69b"/>
+  <path d="M78 128 q0 -56 52 -58 q52 2 52 58 q-20 -22 -52 -22 q-32 0 -52 22 z" fill="#5a3a24"/>
+  <circle cx="104" cy="140" r="11" fill="url(#mej)"/>
+  <circle cx="156" cy="140" r="11" fill="url(#mej)"/>
+  <path d="M98 128 q10 -12 20 0" fill="none" stroke="#3a2a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M142 128 q10 -12 20 0" fill="none" stroke="#3a2a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M90 122 q40 -14 80 0 l0 10 q-10 10 -30 6 l-20 0 q-20 4 -30 -6 z" fill="#bfe6f5" opacity="0.65" stroke="#8fd0e6" stroke-width="2"/>
+  <path d="M116 150 q14 16 28 0 q-14 8 -28 0 z" fill="#8a3b2e"/>
+  <path d="M120 152 q10 8 20 0 z" fill="#fff"/>
+  <!-- casco -->
+  <path d="M80 118 q0 -58 50 -60 q50 2 50 60 q-50 -22 -100 0 z" fill="#ffcf1f"/>
+  <path d="M80 118 q50 -22 100 0 l0 8 q-50 -20 -100 0 z" fill="#e6b800"/>
+  <path d="M130 60 q-8 2 -8 30 l16 0 q0 -28 -8 -30 z" fill="#e6b800"/>
+  <ellipse cx="106" cy="86" rx="16" ry="8" fill="#fff" opacity="0.35"/>
+</svg>

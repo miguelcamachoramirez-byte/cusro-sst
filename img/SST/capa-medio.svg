@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" preserveAspectRatio="xMidYMid slice">
+  <defs><linearGradient id="metal2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#cfd8dc"/><stop offset="1" stop-color="#8ea4b0"/>
+  </linearGradient></defs>
+  <g transform="translate(430 320)">
+    <rect x="0" y="60" width="430" height="210" rx="12" fill="url(#metal2)"/>
+    <rect x="40" y="100" width="170" height="130" rx="8" fill="#7a93a1"/>
+    <rect x="240" y="90" width="150" height="150" rx="8" fill="#5f7784"/>
+    <rect x="205" y="150" width="60" height="30" fill="#3f525c"/>
+    <path d="M90 100 l44 -54 h44 l-22 54 z" fill="#90a4ae"/>
+    <rect x="392" y="120" width="48" height="90" rx="6" fill="#2f3f49"/>
+    <circle cx="416" cy="142" r="8" fill="#ef5350"/><circle cx="416" cy="166" r="8" fill="#66bb6a"/>
+    <rect x="404" y="184" width="24" height="14" rx="3" fill="#ffca28"/>
+  </g>
+  <g stroke="#5a7382" stroke-width="14" fill="none" opacity="0.6" stroke-linecap="round">
+    <path d="M0 180 L1280 180"/><path d="M0 220 L820 220 L860 260 L1280 260"/>
+  </g>
+</svg>

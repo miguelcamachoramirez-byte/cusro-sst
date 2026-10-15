@@ -1,26 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SARLAFT</title>
-    <style>
-        body{
-            background-color: #eee;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENSHEN · Curso SST Planta de Inyección</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <iframe src="index2.html" frameborder="0" width="950" height="626" style="
-        margin: auto; 
-        display: block; 
-        border: 10px solid white; 
-        border-radius: 10px; 
-        margin-top: 5%; 
-        box-shadow: 0px 0px 15px #ccc;
-        "></iframe>
+  <div class="marco">
+
+    <!-- Parallax -->
+    <div class="parallax" id="parallax">
+      <img class="capa capa-atras" src="img/SST/capa-atras.svg" alt="">
+      <img class="capa capa-medio" src="img/SST/capa-medio.svg" alt="">
+      <img class="capa capa-adelante" src="img/SST/capa-adelante.svg" alt="">
+    </div>
+
+    <header class="topbar">
+      <div class="logo"><span class="logo-badge">MENSHEN</span><span class="logo-sst">SST</span></div>
+      <div class="progreso"><div class="progreso-barra" id="progresoBarra"></div></div>
+      <button class="btn-mute" id="btnMute" title="Sonido">🔊</button>
+    </header>
+
+    <!-- 0 INICIO -->
+    <section class="screen active" data-s="0">
+      <div class="inicio">
+        <div class="inicio-txt">
+          <h1 class="titulo">GUARDIANES</h1>
+          <h2 class="subtitulo">de la seguridad</h2>
+          <p class="lead">Capacitación en <b>Seguridad y Salud en el Trabajo</b><br>para la planta de inyección <b>Menshen</b>.</p>
+          <button class="btn-start" data-next>¡Iniciemos!</button>
+        </div>
+        <div class="inicio-karen">
+          <div class="bocadillo"><b>¡Hola! Soy Karen</b><br>tu instructora.<br><span>¡Acompáñame!</span></div>
+          <img src="img/SST/operaria-maquina.svg" alt="Karen">
+        </div>
+      </div>
+    </section>
+
+    <!-- 1 CÓMO NAVEGAR -->
+    <section class="screen" data-s="1">
+      <div class="contenido">
+        <h3>¿Cómo recorrer el curso?</h3>
+        <div class="cards">
+          <div class="card"><div class="ic">⬅️➡️</div><p>Usa <b>Anterior</b> y <b>Siguiente</b> para moverte.</p></div>
+          <div class="card"><div class="ic">🖱️</div><p>En las dinámicas, <b>arrastra</b> y haz <b>clic</b> donde se indique.</p></div>
+          <div class="card"><div class="ic">🦺</div><p>La seguridad de la planta <b>depende de ti</b>.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 OBJETIVOS -->
+    <section class="screen" data-s="2">
+      <div class="contenido">
+        <h3>¿Qué vas a lograr?</h3>
+        <div class="cards">
+          <div class="card"><div class="ic">🛡️</div><p>Proteger tu salud frente a los <b>peligros de la planta</b>: máquinas, calor, ruido y químicos.</p></div>
+          <div class="card"><div class="ic">👁️</div><p>Identificar y <b>reportar</b> a tiempo condiciones y actos inseguros.</p></div>
+          <div class="card"><div class="ic">🤝</div><p>Crear una <b>cultura de prevención</b> y autocuidado en el equipo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 QUÉ ES SST -->
+    <section class="screen" data-s="3">
+      <div class="contenido">
+        <h3>¿Qué es la SST?</h3>
+        <p class="texto">La <b>Seguridad y Salud en el Trabajo</b> busca prevenir lesiones y enfermedades causadas por el trabajo, y proteger la salud de todos.</p>
+        <div class="destacado">En Menshen trabajamos con <b>máquinas de alta presión</b>, <b>plástico fundido a más de 200&nbsp;°C</b>, <b>ruido</b> y <b>sustancias químicas</b>. Conocer los riesgos es el primer paso para controlarlos.</div>
+      </div>
+    </section>
+
+    <!-- 4 ACCIDENTE / INCIDENTE -->
+    <section class="screen" data-s="4">
+      <div class="contenido">
+        <h3>Accidente e incidente</h3>
+        <div class="cards">
+          <div class="card"><div class="ic">⚠️</div><p><b>Accidente de trabajo:</b> suceso repentino que produce una lesión o perturbación.</p></div>
+          <div class="card"><div class="ic">❗</div><p><b>Incidente:</b> evento que no causó lesión pero pudo hacerlo (casi-accidente).</p></div>
+          <div class="card"><div class="ic">📣</div><p>Reportar los incidentes evita que se conviertan en accidentes.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 RIESGOS (clic) -->
+    <section class="screen" data-s="5">
+      <div class="contenido">
+        <h3>Riesgos en la planta de inyección</h3>
+        <p class="texto">Haz clic en cada riesgo para conocerlo (debes verlos todos).</p>
+        <div class="riesgos">
+          <button class="riesgo" data-info="Partes móviles del molde y husillo pueden atrapar o aplastar manos y dedos. Nunca metas las manos con la máquina en operación."><img src="img/SST/riesgo-mecanico.svg" alt=""><span>Mecánico</span></button>
+          <button class="riesgo" data-info="El plástico fundido y las resistencias superan los 200 °C. Riesgo de quemaduras por contacto o salpicadura."><img src="img/SST/riesgo-termico.svg" alt=""><span>Térmico</span></button>
+          <button class="riesgo" data-info="Ruido continuo por encima de 85 dB que puede causar pérdida auditiva. Usa protección auditiva."><img src="img/SST/riesgo-ruido.svg" alt=""><span>Ruido</span></button>
+          <button class="riesgo" data-info="Vapores de polímeros, aditivos y desmoldantes. Requiere ventilación y protección respiratoria."><img src="img/SST/riesgo-quimico.svg" alt=""><span>Químico</span></button>
+          <button class="riesgo" data-info="Posturas forzadas y levantamiento de moldes y materiales. Usa ayudas mecánicas y técnica segura."><img src="img/SST/riesgo-ergonomico.svg" alt=""><span>Ergonómico</span></button>
+          <button class="riesgo" data-info="Tableros, motores y resistencias eléctricas. Riesgo de choque eléctrico. Solo personal autorizado."><img src="img/SST/riesgo-electrico.svg" alt=""><span>Eléctrico</span></button>
+        </div>
+        <div class="riesgo-info" id="riesgoInfo">Selecciona un riesgo para ver la información.</div>
+      </div>
+    </section>
+
+    <!-- 6 FACTORES DE RIESGO -->
+    <section class="screen" data-s="6">
+      <div class="contenido">
+        <h3>Factores de riesgo</h3>
+        <p class="texto">Un accidente puede originarse en distintos factores de la operación:</p>
+        <div class="cards cards-5">
+          <div class="card"><div class="ic">🏭</div><p><b>La máquina</b></p></div>
+          <div class="card"><div class="ic">🧱</div><p><b>El material</b></p></div>
+          <div class="card"><div class="ic">🌡️</div><p><b>El entorno</b></p></div>
+          <div class="card"><div class="ic">📋</div><p><b>El método</b></p></div>
+          <div class="card"><div class="ic">🧑‍🏭</div><p><b>La persona</b></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 DINÁMICA DRAG AND DROP -->
+    <section class="screen" data-s="7">
+      <div class="contenido">
+        <h3>¡Identifica el peligro!</h3>
+        <p class="texto">Arrastra cada riesgo hacia su definición correcta (debes colocar los 4).</p>
+        <div class="dnd">
+          <div class="dnd-fichas" id="fichas">
+            <div class="ficha" draggable="true" data-id="quimico"><img src="img/SST/riesgo-quimico.svg" alt=""><span>Químico</span></div>
+            <div class="ficha" draggable="true" data-id="ruido"><img src="img/SST/riesgo-ruido.svg" alt=""><span>Ruido</span></div>
+            <div class="ficha" draggable="true" data-id="mecanico"><img src="img/SST/riesgo-mecanico.svg" alt=""><span>Mecánico</span></div>
+            <div class="ficha" draggable="true" data-id="termico"><img src="img/SST/riesgo-termico.svg" alt=""><span>Térmico</span></div>
+          </div>
+          <div class="dnd-defs">
+            <div class="def"><div class="zona" data-acepta="termico"></div><p>Quemaduras por plástico fundido y resistencias a más de 200&nbsp;°C.</p></div>
+            <div class="def"><div class="zona" data-acepta="mecanico"></div><p>Atrapamiento o aplastamiento por partes móviles del molde.</p></div>
+            <div class="def"><div class="zona" data-acepta="quimico"></div><p>Inhalación de vapores de polímeros, aditivos y desmoldantes.</p></div>
+            <div class="def"><div class="zona" data-acepta="ruido"></div><p>Pérdida auditiva por ruido continuo mayor a 85&nbsp;dB.</p></div>
+          </div>
+        </div>
+        <div class="dnd-feedback" id="dndFeedback"></div>
+      </div>
+    </section>
+
+    <!-- 8 EPP -->
+    <section class="screen" data-s="8">
+      <div class="contenido">
+        <h3>Elementos de Protección Personal</h3>
+        <p class="texto">Tu EPP es tu primera línea de defensa.</p>
+        <div class="epp">
+          <div class="epp-item"><img src="img/SST/epp-casco.svg" alt=""><p>Casco</p></div>
+          <div class="epp-item"><img src="img/SST/epp-gafas.svg" alt=""><p>Gafas</p></div>
+          <div class="epp-item"><img src="img/SST/epp-guantes.svg" alt=""><p>Guantes térmicos</p></div>
+          <div class="epp-item"><img src="img/SST/epp-auditiva.svg" alt=""><p>Protección auditiva</p></div>
+          <div class="epp-item"><img src="img/SST/epp-botas.svg" alt=""><p>Botas de seguridad</p></div>
+          <div class="epp-item"><img src="img/SST/epp-respirador.svg" alt=""><p>Respirador</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 DINÁMICA: EQUIPA A KAREN (drag al cuerpo) -->
+    <section class="screen" data-s="9">
+      <div class="contenido">
+        <h3>¡Equipa a Karen!</h3>
+        <p class="texto">Arrastra cada EPP a la parte correcta del cuerpo (debes colocar los 4).</p>
+        <div class="equipar">
+          <div class="equipar-fichas" id="eppFichas">
+            <div class="ficha" draggable="true" data-epp="casco"><img src="img/SST/epp-casco.svg" alt=""><span>Casco</span></div>
+            <div class="ficha" draggable="true" data-epp="gafas"><img src="img/SST/epp-gafas.svg" alt=""><span>Gafas</span></div>
+            <div class="ficha" draggable="true" data-epp="guantes"><img src="img/SST/epp-guantes.svg" alt=""><span>Guantes</span></div>
+            <div class="ficha" draggable="true" data-epp="botas"><img src="img/SST/epp-botas.svg" alt=""><span>Botas</span></div>
+          </div>
+          <div class="equipar-cuerpo">
+            <img class="cuerpo-img" src="img/SST/operaria-maquina.svg" alt="Karen">
+            <div class="zona-epp z-casco" data-epp="casco" title="Cabeza"></div>
+            <div class="zona-epp z-gafas" data-epp="gafas" title="Ojos"></div>
+            <div class="zona-epp z-guantes" data-epp="guantes" title="Manos"></div>
+            <div class="zona-epp z-botas" data-epp="botas" title="Pies"></div>
+          </div>
+        </div>
+        <div class="dnd-feedback" id="eppFeedback"></div>
+      </div>
+    </section>
+
+    <!-- 10b QUIZ P1 -->
+    <section class="screen" data-s="23">
+      <div class="contenido">
+        <h3>Pregunta 1</h3>
+        <div class="quiz-uno" data-correcta="B">
+          <p class="pregunta">¿Qué EPP usas para manipular piezas calientes?</p>
+          <button class="opcion" data-op="A"><b>A.</b> Guantes de tela delgada.</button>
+          <button class="opcion" data-op="B"><b>B.</b> Guantes térmicos resistentes al calor.</button>
+          <button class="opcion" data-op="C"><b>C.</b> Ninguno, si lo haces rápido.</button>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 INSPECCIÓN PREOPERACIONAL -->
+    <section class="screen" data-s="10">
+      <div class="contenido">
+        <h3>Inspección preoperacional</h3>
+        <p class="texto">Antes de iniciar el turno en la inyectora, verifica:</p>
+        <ul class="lista">
+          <li>Guardas de seguridad y protecciones del molde instaladas.</li>
+          <li>Paros de emergencia visibles, accesibles y funcionando.</li>
+          <li>Área de trabajo limpia, ordenada y sin derrames.</li>
+          <li>Elementos de protección personal completos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 11 RIESGO TÉRMICO (contenido) -->
+    <section class="screen" data-s="11">
+      <div class="contenido">
+        <h3>Riesgo térmico</h3>
+        <div class="split">
+          <img class="split-img" src="img/SST/riesgo-termico.svg" alt="">
+          <div>
+            <p class="texto">El cañón y el molde superan los <b>200&nbsp;°C</b>. Una salpicadura de material fundido causa quemaduras graves.</p>
+            <div class="destacado">Usa <b>guantes térmicos</b> y <b>gafas</b>, y nunca retires piezas calientes con las manos descubiertas.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 RIESGO POR RUIDO (contexto antes de la pregunta de ruido) -->
+    <section class="screen" data-s="12">
+      <div class="contenido">
+        <h3>Riesgo por ruido</h3>
+        <div class="split">
+          <img class="split-img" src="img/SST/riesgo-ruido.svg" alt="">
+          <div>
+            <p class="texto">Las inyectoras y compresores generan <b>ruido continuo</b>. Por encima de <b>85&nbsp;dB</b> puede causar pérdida auditiva permanente.</p>
+            <div class="destacado">Usa <b>protección auditiva</b> (tapones u orejeras) en todas las zonas señalizadas.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13 QUIZ P2 -->
+    <section class="screen" data-s="13">
+      <div class="contenido">
+        <h3>Pregunta 2</h3>
+        <div class="quiz-uno" data-correcta="A">
+          <p class="pregunta">En zonas con ruido mayor a 85&nbsp;dB debes:</p>
+          <button class="opcion" data-op="A"><b>A.</b> Usar protección auditiva.</button>
+          <button class="opcion" data-op="B"><b>B.</b> Taparte los oídos con las manos.</button>
+          <button class="opcion" data-op="C"><b>C.</b> No hacer nada, el oído se acostumbra.</button>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14 LOTO -->
+    <section class="screen" data-s="14">
+      <div class="contenido">
+        <h3>Bloqueo y etiquetado (LOTO)</h3>
+        <p class="texto">Antes de mantenimiento, limpieza o despeje de atascos:</p>
+        <ol class="pasos">
+          <li><b>Apaga</b> la máquina (parada segura).</li>
+          <li><b>Aísla</b> las energías (eléctrica, hidráulica, neumática y térmica).</li>
+          <li><b>Bloquea</b> con candado el punto de corte.</li>
+          <li><b>Etiqueta</b> indicando quién interviene.</li>
+          <li><b>Verifica</b> energía cero antes de empezar.</li>
+        </ol>
+        <div class="destacado alerta">⚠️ Nunca retires el candado o la etiqueta de otro compañero.</div>
+      </div>
+    </section>
+
+    <!-- 15 JERARQUÍA DE CONTROLES -->
+    <section class="screen" data-s="15">
+      <div class="contenido">
+        <h3>Jerarquía de controles</h3>
+        <p class="texto">Para controlar un riesgo, prioriza en este orden:</p>
+        <ol class="pasos">
+          <li><b>Eliminar</b> el peligro en la fuente.</li>
+          <li><b>Sustituir</b> por algo menos peligroso.</li>
+          <li><b>Controles de ingeniería</b> (guardas, resguardos).</li>
+          <li><b>Controles administrativos</b> (procedimientos, señalización).</li>
+          <li><b>EPP</b> como última barrera.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 16 QUIZ P3 -->
+    <section class="screen" data-s="16">
+      <div class="contenido">
+        <h3>Pregunta 3</h3>
+        <div class="quiz-uno" data-correcta="B">
+          <p class="pregunta">Antes de despejar un atasco en el molde, lo correcto es:</p>
+          <button class="opcion" data-op="A"><b>A.</b> Retirarlo rápido con la máquina encendida.</button>
+          <button class="opcion" data-op="B"><b>B.</b> Aplicar LOTO: apagar, aislar, bloquear y verificar energía cero.</button>
+          <button class="opcion" data-op="C"><b>C.</b> Pedir a un compañero que sostenga el molde.</button>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 EMERGENCIAS -->
+    <section class="screen" data-s="17">
+      <div class="contenido">
+        <h3>Actuación ante emergencias</h3>
+        <div class="cards">
+          <div class="card"><div class="ic">🔥</div><p><b>Incendio:</b> da la alarma, usa el extintor adecuado y evacúa por la ruta señalizada.</p></div>
+          <div class="card"><div class="ic">🩹</div><p><b>Quemadura:</b> enfría con agua, no apliques cremas, cubre con material limpio y acude a enfermería.</p></div>
+          <div class="card"><div class="ic">📞</div><p><b>Reporta:</b> todo incidente o condición insegura al supervisor de inmediato.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 18 REPORTE -->
+    <section class="screen" data-s="18">
+      <div class="contenido">
+        <h3>Reporte de condiciones inseguras</h3>
+        <p class="texto">Reportar a tiempo evita accidentes. Puedes hacerlo:</p>
+        <div class="cards">
+          <div class="card"><div class="ic">📝</div><p>Con el <b>formato de reporte</b> de acto o condición insegura.</p></div>
+          <div class="card"><div class="ic">👷</div><p>Directamente a tu <b>líder de proceso</b> o supervisor.</p></div>
+          <div class="card"><div class="ic">📧</div><p>Al <b>responsable de SST</b> de la planta.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 19 QUIZ P4 -->
+    <section class="screen" data-s="19">
+      <div class="contenido">
+        <h3>Pregunta 4</h3>
+        <div class="quiz-uno" data-correcta="C">
+          <p class="pregunta">Si detectas una condición insegura, debes:</p>
+          <button class="opcion" data-op="A"><b>A.</b> Ignorarla si no es tu puesto.</button>
+          <button class="opcion" data-op="B"><b>B.</b> Esperar a que alguien más la reporte.</button>
+          <button class="opcion" data-op="C"><b>C.</b> Reportarla de inmediato al líder de proceso.</button>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 20 AUTOCUIDADO -->
+    <section class="screen" data-s="20">
+      <div class="contenido">
+        <h3>Autocuidado</h3>
+        <div class="split">
+          <img class="split-img" src="img/SST/operaria-maquina.svg" alt="Karen">
+          <div>
+            <p class="texto">El autocuidado es tu compromiso diario: usar el EPP, respetar las guardas, no tomar atajos y cuidar a tus compañeros.</p>
+            <div class="destacado"><b>Karen te recuerda:</b> ninguna pieza vale más que tu salud. ¡Trabaja seguro siempre!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 21 QUIZ P5 -->
+    <section class="screen" data-s="21">
+      <div class="contenido">
+        <h3>Pregunta 5</h3>
+        <div class="quiz-uno" data-correcta="A">
+          <p class="pregunta">¿Cuál es el control MÁS efectivo frente a un riesgo?</p>
+          <button class="opcion" data-op="A"><b>A.</b> Eliminar el peligro en la fuente.</button>
+          <button class="opcion" data-op="B"><b>B.</b> Usar solo el EPP.</button>
+          <button class="opcion" data-op="C"><b>C.</b> Poner una señal de advertencia.</button>
+          <div class="quiz-feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JUEGO 1: KAREN ESQUIVA -->
+    <section class="screen" data-s="j1">
+      <div class="contenido juego-wrap">
+        <h3>🎮 Karen esquiva peligros</h3>
+        <p class="texto">Pulsa <b>Jugar</b> y usa <b>Espacio</b> o <b>clic</b> para saltar. Cada peligro muestra su nombre. Esquiva 8 para ganar.</p>
+        <canvas id="juegoCorredor" width="860" height="280"></canvas>
+        <div class="juego-barra"><span class="juego-hud" id="corredorHud">Esquivados: 0 / 8</span><button class="btn-jugar" id="corredorBtn">▶ Jugar</button></div>
+      </div>
+    </section>
+
+    <!-- JUEGO 2: ATRAPA EL EPP -->
+    <section class="screen" data-s="j2">
+      <div class="contenido juego-wrap">
+        <h3>🎮 Atrapa el EPP</h3>
+        <p class="texto">Mueve a Karen con las <b>flechas</b> o el <b>mouse</b>. Atrapa 10 EPP y evita los peligros (🔥🔪⚡).</p>
+        <canvas id="juegoAtrapa" width="860" height="300"></canvas>
+        <div class="juego-barra"><span class="juego-hud" id="atrapaHud">EPP recogido: 0 / 10</span><button class="btn-jugar" id="atrapaBtn">▶ Jugar</button></div>
+      </div>
+    </section>
+
+    <!-- 22 CIERRE / DIPLOMA -->
+    <section class="screen" data-s="22">
+      <div class="final">
+        <div class="final-info">
+          <div class="final-medalla" id="finalMedalla">🏅</div>
+          <h1 class="final-titulo" id="finalTitulo">¡CAMPEÓN DE LA SEGURIDAD!</h1>
+          <div class="final-score">
+            <div class="score-num"><span id="finalPuntos">0</span><small>puntos</small></div>
+            <div class="score-estrellas" id="finalEstrellas">⭐⭐⭐</div>
+          </div>
+          <div class="final-logros">
+            <h4>Mejoraste en:</h4>
+            <ul id="finalLogros"><li>Completa las actividades para ver tus logros.</li></ul>
+          </div>
+          <button class="btn-start" data-reset>Volver al inicio</button>
+        </div>
+        <div class="final-karen">
+          <div class="bocadillo"><b>¡Felicitaciones!</b><br>Lo lograste.<br><span>¡Eres un crack de la SST!</span></div>
+          <img src="img/SST/operaria-maquina.svg" alt="Karen felicitando">
+        </div>
+      </div>
+    </section>
+
+    <footer class="nav">
+      <button class="btn-nav" id="btnBefore">◀ Anterior</button>
+      <button class="btn-nav primario" id="btnNext">Siguiente ▶</button>
+    </footer>
+
+  </div>
+  <script src="juegos.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+
