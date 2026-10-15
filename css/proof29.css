@@ -1,0 +1,163 @@
+#proof29{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 100%;
+    /* left: 0%; */
+    z-index:1;
+}
+
+.presentacion29 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+.tituleProof29{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: left;
+    width: 100%;
+}
+
+.tituleProof29 h3{
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin: 0;
+}
+
+.tituleProof29 p{
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    margin: 0;
+}
+
+.containerProof29Text{ 
+    position: absolute;
+    display: flex;
+    top: 30%;
+    margin: auto;
+}
+.containerProof29TextDiv{
+    display: flex;
+}
+
+.containerProof29TextP{
+    margin-top: 4rem;
+}
+
+.containerProof29TextP p{
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.containerProof29TextP h3{
+    margin-top: -0.3rem;
+    font-size: 2rem;
+}
+
+
+.containerLetter29{
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 24, 24);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-top: 0.75rem;
+}
+
+.containerLetter29 h3{
+    margin: 0;
+}
+
+.text29{
+    margin-top: 0.7rem;
+}
+
+.textBox29uno{
+    position: absolute;
+    top: 65%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.103);
+    left: 20%;
+}
+
+.textBox29dos{
+    position: absolute;
+    top: 70%;
+    padding: 0.5rem;
+    left: 40%;
+}
+
+.textBox29tres{
+    position: absolute;
+    top: 50%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.103);
+    left: 57%;
+}
+
+.textBox29cuatro{
+    position: absolute;
+    top: 75%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.103);
+    left: 57%;
+}
+
+.linea1{
+    position: absolute;
+    top: 73.5%;
+    left: 37%;
+    border-top: 1px solid white;
+    height: 1px;
+    width: 2rem;
+}
+
+.linea2{
+    position: absolute;
+    top: 73.5%;
+    left: 51%;
+    border-top: 1px solid white;
+    height: 1px;
+    width: 2rem;
+}
+
+.linea3{
+    position: absolute;
+    top: 58%;
+    left: 54%;
+    border-left: 1px solid white;
+    height: 1px;
+    width: 1px;
+    height: 15rem;
+}
+
+.linea4{
+    position: absolute;
+    top: 58%;
+    left: 54%;
+    border-top: 1px solid white;
+    height: 1px;
+    width: 2rem;
+}
+
+.linea5{
+    position: absolute;
+    top: 89%;
+    left: 54%;
+    border-top: 1px solid white;
+    height: 1px;
+    width: 2rem;
+}
+

@@ -1,0 +1,92 @@
+#proof41{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index:1;
+}
+
+.presentacion41 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.tituleProof41{
+    position: absolute;
+    top: 20%;
+    left: 3.5rem;
+    width: 100%;
+    margin: auto;
+}
+
+.tituleProof41 p{
+    font-size: 4.5rem;
+    margin-left: -20rem !important;
+}
+
+.tituleProof41 h3{
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+}
+
+.containerProof41{
+    position: absolute;
+    top: 52%;
+}
+
+.containerProof41 p{
+    font-size:1.9rem;
+    line-height: 2.1rem;
+}
+
+.containerProof41 h3{
+    font-size:2.5rem;
+    margin-bottom: 2.5rem !important;
+}
+
+#completaste41{
+    position: absolute;
+    top: 16%;
+    left: 20%;
+}
+
+.tituleProof41animate {
+    animation: tituleProof41animate 1.8s ease-in-out ;
+    animation-fill-mode: forwards
+
+}
+
+@keyframes tituleProof41animate {
+	0% {
+		top:-100% ;
+	}
+
+    100% {
+        top: 20%;;
+    }
+}
+
+.containerProof41animate {
+    animation: containerProof41animate 1.8s ease-in-out ;
+    animation-fill-mode: forwards
+
+}
+
+
+@keyframes containerProof41animate {
+	0% {
+		top:100% ;
+	}
+
+    100% {
+        top: 50%;
+    }
+}

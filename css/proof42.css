@@ -1,0 +1,41 @@
+#proof42{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index:1;
+}
+
+.presentacion42 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+.canalAtencion h2{
+    color: rgb(0,128,74);
+    font-size: 4rem;
+}
+
+.canalAtencion span{
+    font-weight: 900;
+}
+
+.canalAtencion p{
+    color: rgb(51,51,51);
+    font-size: 2rem;
+}
+
+.canalAtencion p span{
+    color: black;
+    font-size: 2rem;
+}
+
+

@@ -1,0 +1,54 @@
+#proof37{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index:1;
+}
+
+.presentacion37 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    position: relative;
+}
+
+.tituleProof37{
+    position: absolute;
+    top: 20%;
+    width: 85%;
+    margin: auto;
+    text-align: left;
+}
+
+.tituleProof37 p{
+    font-size: 2.8rem;
+    margin: 0;
+    margin-top: -1rem;
+}
+
+
+.tituleProof37 h3{
+    font-size: 3.2rem;
+    margin: 0;
+    margin-top: -1rem;
+    line-height: 5rem;
+}
+
+.containerProof37{
+    position: absolute;
+    top: 35%;
+    width: 85%;
+    margin: auto;
+    text-align: left;
+}
+
+audio{
+    margin-top: 3rem;
+}

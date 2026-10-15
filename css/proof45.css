@@ -1,0 +1,54 @@
+#proof45{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index:1;
+}
+
+.presentacion45 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+#cel45{
+    position: absolute;
+    top: calc(50% - 15rem);
+    left: 10%;
+    height: 30rem;
+    width: 30rem;
+}
+
+.celUno{
+    text-align: left;
+    margin-right: 20%;
+}
+
+.celUno p{
+    color: rgb(51,51,51); 
+    font-size: 2.5rem;  
+}
+
+@media (max-width: 1170px) {
+    #cel45 {
+      width: 40%;
+      left: 0;
+    }
+    .computador{
+        width: 60%;
+        left: 40%;
+    }
+    
+    .celUno{
+        margin-right: 3%;
+    }
+    
+}
+

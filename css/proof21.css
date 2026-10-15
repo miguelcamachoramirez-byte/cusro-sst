@@ -1,0 +1,258 @@
+#proof21{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    /* left: 0%; */
+    top: 0%;
+}
+
+.presentacion21 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+.tituleProof21{
+    position: absolute;
+    top: 20%;
+    left: 3.5rem;
+}
+
+.tituleProof21 h2{
+    font-size: 3.2rem;
+}
+
+.tituleProof21 h3{
+    font-size: 4rem;
+    margin-top: -1.5rem;
+}
+
+.containerProof21{
+    position: absolute;
+    top: 36%;
+}
+.containerProof21Titule{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.texBool{
+    width: 70%;
+}
+.tituleBool{
+    margin-top: 3rem;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.tituleBool b{
+    font-size: 1.5rem;
+}
+
+.containerProof21Text{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.questions{
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+.containerTextB{
+    width: 2%;
+    margin-right: 0.8rem;
+    font-size: 1.5rem;
+}
+.questionDiv{
+    width: 100%;
+}
+.containerQuestion{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+  
+  /* Inherit box-sizing to make it easier to change the property
+   * for components that leverage other behavior.*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /*style form to limit width and highlight the long label*/
+  form {
+      margin: 1rem auto;
+      max-width: 750px;
+  }
+  
+  /*style wrapper to give some space*/
+  .wrapper {
+      position: relative;
+      margin-bottom: 1rem;
+  }
+  
+  /*style label to give some more space*/
+  .wrapper label {
+      display: block;
+      padding: 12px 0px 12px 40px;
+      z-index: 100;
+      height: 40px;
+      width: 40px ;
+  }
+  
+  /*style and hide original checkbox*/
+  .wrapper input {
+    height: 40px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    z-index: 100;
+    background-color: cornsilk;
+  }
+  
+  /*position new box*/
+  .wrapper input + label::before {
+    border: 2px solid;
+    content: "";
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+  
+  /*create check symbol with pseudo element*/
+  .wrapper input + label::after {
+    content: "";
+    border: 4px solid;
+    border-left: 0;
+    border-top: 0;
+    height: 20px;
+    left: 14px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    transform: rotate(45deg);
+    transition: opacity 0.2s ease-in-out;
+    width: 12px;
+  }
+  
+  /*reveal check for 'on' state*/
+  .wrapper input:checked + label::after {
+    opacity: 1;
+  }
+  
+  /*focus styles—commented out for the tutorial, but you’ll need to add them for proper use
+  .wrapper input:focus + label::before {
+    box-shadow: 0 0 0 3px #ffbf47;  
+    outline: 3px solid transparent;
+  }*/
+
+
+  
+
+/* --------------emergentes-------------*/
+
+.puntos21 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100vw;
+    position: absolute;
+    z-index: 70 ;
+    /* left: 0%; */
+    left: 100%;
+}
+
+#correcto21{
+    width: 20rem;
+}
+
+.emergenteContainer h3{
+    font-size: 2.5rem;
+}
+
+
+.noPuntos21{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100vw;
+    position: absolute;
+    z-index: 70 ;
+    /* left: 0%; */
+    left: 100%;
+
+}
+
+#incorrecto21{
+    width: 20rem;
+}
+
+
+
+
+#proof21 .tituleProof21{
+    overflow: initial;
+}
+#proof21 .tituleProof21 h3{
+    background-color: #bf2f41;
+    width: 550px;
+    margin: auto;
+    position: relative;
+    overflow: initial;
+    margin-top: -15px;
+}
+#proof21 .tituleProof21 h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 62px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+#proof21 .tituleProof21 h3:after{
+    content: "";
+    border-top: 62px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}
+.containerProof21 {
+    top: 40%;
+}

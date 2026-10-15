@@ -1,0 +1,65 @@
+#proof36a{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+
+}
+
+.presentacion36a{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    width: 100vw;
+    z-index: 10;
+}
+
+.titule36a{
+    position: absolute;
+    width: 70%;
+    top: 20%;
+    left: 5%;
+    text-align: left;
+
+}
+
+.titule36a h3{
+    font-size: 4rem;
+}
+
+.titule36a p{
+    line-height: 1.8rem;
+}
+
+
+
+#proof36a .titule36a{
+    overflow: initial;
+}
+#proof36a .titule36a h3{
+    background-color: #bf2f41;
+    width: 430px;
+    /* margin: auto; */
+    position: relative;
+    overflow: initial;
+}
+#proof36a .titule36a h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 63px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+#proof36a .titule36a h3:after{
+    content: "";
+    border-top: 63px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}

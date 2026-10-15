@@ -1,0 +1,151 @@
+#proof34{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+}
+
+.presentacion34 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+.tituleProof34{
+    position: absolute;
+    top: 16%;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+}
+
+.tituleProof34 h3{
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.tituleProof34 p{
+    font-size: 1.9rem;
+    line-height: 1.6rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.containerProof34{ 
+    position: absolute;
+    display: flex;
+    top: 15%;
+    margin: auto;
+    width: 100%;
+    height: 85%;
+    justify-content: space-between;
+
+}
+
+
+.containerProof34Text{
+    text-align: left;
+    margin-top: 17%;
+}
+
+.containerProof34Text h3{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.containerProof34TextP{
+    text-align: center;
+    font-size:1.5rem;
+    line-height: 1.6rem;
+}
+
+.containerProof34Text{
+    margin: auto;
+
+}
+
+.containerProof34Div{
+    display: flex;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.text34Uno{
+    margin-right: 1rem;
+    text-align: left;
+    line-height: 1.3rem;
+}
+
+.text34Uno p{
+    font-size: 1.3rem;
+}
+
+
+.text34Dos{
+    line-height: 1.3rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.containerProof34DivB{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+.containerProof34show{
+    text-align: center;
+}
+
+.containerProof34show p{
+    margin-bottom: 1rem !important;
+}
+
+.containerProof34show{
+    display: none;
+}
+
+#fondo34{
+    width:170%;
+    left: -5%;
+}
+
+
+/*#proof4 .tituleProof4{
+    overflow: initial;
+}*/
+#proof34 .containerProof34Text h3 > span{
+    background-color: #bf2f41;
+    /* width: 500px;
+    margin: auto;
+    overflow: initial; */
+    position: relative;
+    margin-left: 20px;
+}
+#proof34 .containerProof34Text h3 > span:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+#proof34 .containerProof34Text h3 > span:after{
+    content: "";
+    border-top: 70px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}

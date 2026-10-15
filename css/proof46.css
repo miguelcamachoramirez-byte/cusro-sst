@@ -1,0 +1,53 @@
+#proof46{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index:1;
+}
+
+.presentacion46 {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+
+#celDos{
+    position: absolute;
+    top: calc(50% - 15rem);
+    right: 5%;
+    height: 30rem;
+    width: 30rem;
+}
+
+.celDos{
+    text-align: left;
+    margin-left: 20%;
+}
+
+.celDos p{
+    color: rgb(51,51,51); 
+    font-size: 1.8rem;
+    text-align: left;  
+}
+
+@media (max-width: 1170px) {
+    #cel45 {
+      width: 40%;
+      left: 0;
+    }
+    .celDos{
+        margin-left: 5%;
+    }
+}
+
+
+

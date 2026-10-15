@@ -1,0 +1,150 @@
+#proof1{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index: 8;
+}
+
+.presentacion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+.tituleProof1{
+    position: absolute;
+    width: 100%;
+    height: 30rem;
+    top:10rem;
+}
+
+.containerProof1{
+    /* height: 15rem; */
+    position: absolute;
+    top:calc(50%);
+}
+
+.cazadoresProof1{
+    /* width: 30rem; */
+    position: absolute;
+    left: calc(50% - 15rem);
+}
+
+.deProof1{
+    position: absolute;
+    width: 3rem;
+    top:7rem;
+    left: 100%;
+  
+}
+
+.riesgosProof1{
+    position: absolute;
+    width: 17rem;
+    top: 8rem;
+}
+
+.cazadoresProof1animate{
+    animation: cazadoresProof1 1.8s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes cazadoresProof1 {
+	0% {
+    left: -100%;
+    opacity: 1;
+	}
+
+	75% {
+        left:60%;
+
+
+	}
+    90% {
+        left: calc(50% - 15rem);
+        width: 25rem;
+    }
+
+    100%{
+        width: 31rem;
+    }
+}
+
+.deProof1animate{
+    animation: deProof1 1.8s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes deProof1 {
+	0% {
+		left:100% ;
+	}
+
+	75% {
+        left:30%;
+
+	}
+    100% {
+        left: calc(50% - 8rem);
+    }
+}
+
+.riesgosProof1animate{
+    animation: riesgosProof1 1.8s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes riesgosProof1 {
+	0% {
+		left:-100% ;
+	}
+
+	75% {
+        left:30%;
+
+	}
+    100% {
+        left: calc(50% - 5rem);
+
+    }
+}
+
+.containerProof1animate{
+    animation: containerProof1 3s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes containerProof1 {
+	0% {
+		height: 0rem;
+	}
+    15%{
+        height: 2rem;
+    }
+    30%{
+        height: 4rem;
+    }
+    45%{
+        height: 6rem;
+    }
+    60%{
+        height: 8rem;
+    }
+    75% {
+        height: 10rem;
+    }
+    90% {
+        height: 12rem;
+    }
+    100% {
+        height: 16rem;
+    }
+}

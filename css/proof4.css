@@ -1,0 +1,78 @@
+#proof4{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index: 5;
+}
+
+.presentacion4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    text-align: left;
+    color: black;
+    width: 100%;
+    position: relative;
+}
+
+.tituleProof4{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.tituleProof4 h2{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.tituleProof4 h3{
+    font-size: 4.5rem;
+    margin: 0;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+}
+.tituleProof4 p{
+    line-height: 1.7rem;
+}
+
+#adelanteProof4{
+    top: 100%;
+}
+
+
+#proof4 .tituleProof4{
+    overflow: initial;
+}
+#proof4 .tituleProof4 h3{
+    background-color: #bf2f41;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    overflow: initial;
+}
+#proof4 .tituleProof4 h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+#proof4 .tituleProof4 h3:after{
+    content: "";
+    border-top: 70px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}
+#proof4 .tituleProof4 p{
+    margin-top: 40px !important;
+}

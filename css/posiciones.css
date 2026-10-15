@@ -1,0 +1,49 @@
+/* ------normalizado escondidos------- */
+
+.top100{
+    top:100%;
+}
+.topmenos100{
+    top:-100%;
+}
+
+.opacity{
+    opacity: 0;
+}
+
+
+/* ---------proof1--------- */
+
+/* ---------proof2--------- */
+
+/* ---------proof3a------------- */
+#legal{
+    position: absolute;
+    left: -100%;
+}
+
+#reputacion{
+    position: absolute;
+    left: -100%;
+}
+
+#contagio{
+    position: absolute;
+    left: -100%;
+
+}
+
+#operativo{
+    position: absolute;
+    left: 100%;
+}
+
+#corrupcion{
+    position: absolute;
+    left: 100%;
+}
+
+#emergente{
+    position: absolute;
+    left: 100%;
+}

@@ -1,0 +1,234 @@
+#proof32{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 100%;
+    /* left: 0%; */
+}
+
+.presentacion32 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+.tituleProof32{
+    position: absolute;
+    top: 14%;
+    left: 3.5rem;
+}
+
+.tituleProof32 h2{
+    font-size: 3.2rem;
+}
+
+.tituleProof32 h3{
+    font-size: 4rem;
+    margin-top: -1.5rem;
+}
+
+.containerProof32{
+    position: absolute;
+    top: 36%;
+}
+.containerProof32Titule{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.texBool32{
+    width: 70%;
+}
+
+.texBool32 p{
+    font-size: 1.8rem;
+}
+
+.tituleBool32{
+    margin-top: 1.3rem;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.tituleBool32 b{
+    font-size: 1.5rem;
+}
+
+
+
+.containerProof32Text{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.questions32{
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+.containerTextB32{
+    width: 2%;
+    margin-right: 0.8rem;
+    font-size: 1.5rem;
+}
+.questionDiv32{
+    width: 100%;
+}
+.containerQuestion32{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+  
+  /* Inherit box-sizing to make it easier to change the property
+   * for components that leverage other behavior.*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /*style form to limit width and highlight the long label*/
+  form {
+      margin: 1rem auto;
+      max-width: 750px;
+  }
+  
+  /*style wrapper to give some space*/
+  .wrapper {
+      position: relative;
+      margin-bottom: 1rem;
+  }
+  
+  /*style label to give some more space*/
+  .wrapper label {
+      display: block;
+      padding: 12px 0px 12px 40px;
+      z-index: 100;
+      height: 40px;
+      width: 40px ;
+  }
+  
+  /*style and hide original checkbox*/
+  .wrapper input {
+    height: 40px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    z-index: 100;
+    background-color: cornsilk;
+  }
+  
+  /*position new box*/
+  .wrapper input + label::before {
+    border: 2px solid;
+    content: "";
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+  
+  /*create check symbol with pseudo element*/
+  .wrapper input + label::after {
+    content: "";
+    border: 4px solid;
+    border-left: 0;
+    border-top: 0;
+    height: 20px;
+    left: 14px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    transform: rotate(45deg);
+    transition: opacity 0.2s ease-in-out;
+    width: 12px;
+  }
+  
+  /*reveal check for 'on' state*/
+  .wrapper input:checked + label::after {
+    opacity: 1;
+  }
+  
+  /*focus styles—commented out for the tutorial, but you’ll need to add them for proper use
+  .wrapper input:focus + label::before {
+    box-shadow: 0 0 0 3px #ffbf47;  
+    outline: 3px solid transparent;
+  }*/
+
+
+  
+
+/* --------------emergentes-------------*/
+
+.puntos32 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100vw;
+    position: absolute;
+    z-index: 70 ;
+    /* left: 0%; */
+    left: 100%;
+}
+
+#correcto32{
+    width: 20rem;
+}
+
+.emergenteContainer h3{
+    font-size: 2.5rem;
+}
+
+
+.noPuntos32{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100vw;
+    position: absolute;
+    z-index: 70 ;
+    /* left: 0%; */
+    left: 100%;
+
+}
+
+#incorrecto32{
+    width: 20rem;
+}
+
+
+#proof32 p{
+    font-size: 1.3rem !important;
+}

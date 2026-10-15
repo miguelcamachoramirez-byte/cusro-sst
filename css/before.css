@@ -1,0 +1,33 @@
+.before{
+    animation-name: before;
+    animation-duration: 2.25s;
+    /* animation-timing-function: cubic-bezier(.8,.17,0,.97); */
+    animation-fill-mode: forwards;
+}
+
+.before2{
+    animation-name: before2;
+    animation-duration: 2.25s;
+    /* animation-timing-function: cubic-bezier(.8,.17,0,.97); */
+    animation-fill-mode: forwards;
+}
+
+
+
+/* @keyframes before {
+    0%{
+    }
+    100%{
+        left: 0%;
+    }
+} */
+
+@keyframes before2 {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+

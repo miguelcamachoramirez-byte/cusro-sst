@@ -1,0 +1,221 @@
+#proof43{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index:1;
+}
+
+.presentacion43 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+
+}
+
+
+#checkBox{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    border-radius: 2rem;
+    width: 32%;
+    height: 70%;
+    padding-top: 1rem;
+    overflow-y: scroll;
+    direction: rtl
+}
+
+.default{
+    direction: ltr
+}
+
+.computador{
+    width: 40%;
+}
+
+#computadorImg{
+    position: absolute;
+    top: 35vh;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    border-radius: 2rem;
+    width: 40%;
+}
+
+#computadorImg img{
+    width: 100%;
+}
+
+.rellenaTable {
+    text-align: left;
+}
+
+tr.spaceUnder>td {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    padding: 10px;
+}
+
+
+@media (max-width: 1125px) {
+    #checkBox {
+      width: 40%;
+      left: 0;
+    }
+    .computador{
+        width: 60%;
+        left: 40%;
+    }
+    
+}
+
+.puntos1043 {
+    background: linear-gradient(27deg, #ffffff 20%, rgba(225,225,225,1) 100%, rgb(194, 194, 194) 100%);
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 100%;
+}
+
+.emergentes43{
+    animation-name: emergentes43;
+    animation-duration: 1s;
+    /* animation-timing-function: cubic-bezier(.8,.17,0,.97); */
+    animation-fill-mode: forwards;
+}
+.emergentes432{
+    animation-name: emergentes432;
+    animation-duration: 2.3s;
+    /* animation-timing-function: cubic-bezier(.8,.17,0,.97); */
+    animation-fill-mode: forwards;
+}
+
+@keyframes emergentes43 {
+    0%{ left:0%;
+        opacity: 1;
+    }
+    100%{
+        left:100%;
+        opacity: 0;
+    }
+}
+
+@keyframes emergentes432 {
+    0%{ left:100%;
+        opacity: 0;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+
+.puntos1043 h3 {
+    color:rgb(0,128,74);
+    font-size: 3.8rem;
+}
+
+.puntos1043 img {
+    width: 12rem;
+}
+
+.puntos1043 span {
+    font-size: 3.8rem;
+    font-family: 'Fredoka One';
+}
+
+.puntos1043 p{
+    color: rgb(51,51,51);
+    font-size: 3.8rem;
+}
+
+/* ----------------------------- */
+.incorrecto {
+    background: linear-gradient(27deg, #ffffff 20%, rgba(225,225,225,1) 100%, rgb(194, 194, 194) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    z-index: 200;
+    position: absolute;
+    left: 100%;
+
+}
+
+.containerIncorrecto{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.incorrecto img {
+    width: 18rem;
+}
+
+.incorrecto h2{
+    font-size: 2.5rem;
+}
+
+.incorrecto h3{
+    font-size: 3rem;
+    color:rgb(0,128,74);
+}
+
+.incorrecto span{
+    font-size: 2.5rem;
+    font-weight: 900;
+
+}
+
+.incorrectoText{
+    text-align: left;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.incorrectoImg{
+    width: 40%;
+}
+.incorrectoImg img{
+    width: 28rem;
+} 
+
+@media (max-width: 1125px) {
+    .incorrecto {
+      width: 100%;
+    }
+  }
+
+
+
+
+

@@ -1,0 +1,149 @@
+.next{
+    animation-name: next;
+    animation-duration: 1.25s;
+    /* animation-timing-function: cubic-bezier(.8,.17,0,.97); */
+    animation-fill-mode: forwards;
+}
+.next2{
+    animation-name: next2;
+    animation-duration: 1.7s;
+    /* animation-timing-function: cubic-bezier(.8,.17,0,.97); */
+    animation-fill-mode: forwards;
+}
+
+@keyframes next {
+    0%{ left:0%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+
+@keyframes next2 {
+    0%{ left:100%;
+        opacity: 0;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.next2nopa{
+    animation-name: next2nopa;
+    animation-duration: 1.7s;
+    /* animation-timing-function: cubic-bezier(.8,.17,0,.97); */
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes next2nopa {
+    0%{ left:100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+.before{
+    animation-name: before;
+    animation-duration: 2.25s;
+    animation-fill-mode: forwards;
+}
+.before2{
+    animation-name: before2;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes before {
+    0%{ left:-100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+@keyframes before2 {
+    0%{ left:0%
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+
+
+/* ---up------- */
+
+
+/*  todas las transiciones ene vertical traen 
+    top 100% */
+
+.nextUP{  /* ---paso de ----- */
+    animation-name: nextUP;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+.next2UP{
+    animation-name: next2UP;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nextUP {
+    0%{ top: 0%;
+    }
+    100%{
+        top: -100%;
+        
+    }
+}
+
+@keyframes next2UP {
+    0%{ top:100%
+    }
+    100%{
+        top: 0%;
+    }
+}
+
+/* beforeUp pasa de top estar oculto abaho a estar en vista */
+
+.beforeUP{
+    animation-name: beforeUP;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+.before2UP{
+    animation-name: before2UP;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes beforeUP {
+    0%{ top:-100%;
+    }
+    100%{
+        top: 0%;
+    }
+}
+
+
+@keyframes before2UP {
+    0%{ top:0%
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+
+

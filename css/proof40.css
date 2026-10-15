@@ -1,0 +1,53 @@
+#proof40{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+}
+
+.presentacion40 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+.tituleProof40{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    margin: auto;
+
+}
+
+.tituleProof40 h3{
+    font-size: 4rem;
+}
+
+.containerProof40{
+    position: absolute;
+    top: 40%;
+}
+
+.containerProof40{
+    position: absolute;
+    top: 40%;
+}
+
+.containerProof40 h3{
+    margin-bottom: 2rem;
+}
+
+.containerProofText40 p{
+    line-height: 2rem;
+}
+
+#next40{
+    display: none;
+}

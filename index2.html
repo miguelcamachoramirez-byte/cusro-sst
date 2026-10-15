@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>SAC</title>
+
+</head>
+
+<script>
+  var before = new Audio();
+  before.src = "./sonidos/before.mp3";
+
+  var next = new Audio();
+  next.src = "./sonidos/next.mp3";
+
+
+
+
+</script>
+<body id="body" style="background: no-repeat center url(/img/PAG-2/FONDO-MEDIO.png); background-color: rgb(26, 77, 55)" >
+<!-- <body style="background: #277027 " > -->
+
+  <div class="logo" >
+    <img src="./img/LOGO-2.png" alt="">
+    <img id="logomargen" src="./img/LOGO-1.png" alt="">
+  </div>
+
+  <section id="start">
+    <div class="botonCurso">
+      <button id="before" type="button" class="beforeBtn" name="start" style="display: none;">Anterior</button>
+    </div>
+    <!-- <div class="presentacionlogo" style="z-index: 100;">
+      <img src="./img/LOGO-2.png" alt="">
+      <img id="logomargen" src="./img/LOGO-1.png" alt="">
+    </div> -->
+
+    <div class="presentacion">
+      <img id="atras" class="back" src="./img/PAG-1/FONDO-ATRAS.png" alt="">
+      <img id="medio" class="back" src="./img/PAG-1/FONDO-MEDIO.png" alt="" style="height: 110%; top: -5%;">
+      <img id="adelante" class="back" src="./img/PAG-1/FONDO-ADELANTE.png" alt="" style="width: 110%; height: 110%; top: -5%; left: -5%;"> 
+      <img id="fondo1" class="back" src="./img/PAG-1/FONDO-PARA-TEXTO.png" alt=""> 
+      <img id="palma2" src="./img/PAG-1/PALMA-2.png" alt=""> 
+      <img id="palma1" src="./img/PAG-1/PALMA-1.png" alt=""> 
+      <img id="palma3" src="./img/PAG-1/PALMA-3.png" alt=""> 
+      <img id="palma4" src="./img/PAG-1/PALMA-4.png" alt=""> 
+      <div class="tituleStart">
+        <img id="cazadores" src="./img/TITULO-1/CAZADORES.png"/>
+        <img id="de" src="./img/TITULO-1/DE.png" alt="">
+        <img id="riesgos" src="./img/TITULO-1/RIESGOS.png" alt="">
+      </div>
+      <div class="containerStart">
+        <h3>¡Vivamos la expedición!</h3>
+        <p>Caza junto a nosotros una de las especies más peligrosas de nuestro planeta:<br>
+          <b>la delincuencia</b></p>
+          <button id="next" type="button" class="nextBtn" name="start" onmousedown="next.play()">¡ Iniciemos </button>
+        <h3>nuestra cacería!</h3>
+      </div>
+    </div>
+  </section>
+
+
+   <!-- ---------------------------AJX----------------------------------------- -->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      var next = false
+      var next3a = false
+      var next8 = false
+      var next17 = false
+      var next29 = false
+      var next36 = false
+
+      $("#next").click(function(event) {
+        if(!next){
+          next =true
+          $("#proof0Prov").load('/IndexProof/proof0.html');
+          $("#proof1Prov").load('/IndexProof/proof1.html');
+          $("#proof2Prov").load('/IndexProof/proof2.html');
+          $("#proof3Prov").load('/IndexProof/proof3.html');
+          $("#proof3aProv").load('/IndexProof/proof3a.html');
+        }
+      });
+    
+      $("#next3a").click(function(event) {
+        if (!next3a) {
+          next3a = true
+          $("#proof4Prov").load('/IndexProof/proof4.html');
+          $("#proof6Prov").load('/IndexProof/proof6.html');
+          $("#proof8Prov").load('/IndexProof/proof8.html');
+      }
+  
+      });
+
+      $("#next8").click(function(event) {
+        if (!next8) {
+          next8 = true
+          $("#proof13Prov").load('/IndexProof/proof13.html');
+          $("#proof15Prov").load('/IndexProof/proof15.html');
+          $("#proof16Prov").load('/IndexProof/proof16.html');
+          $("#proof17Prov").load('/IndexProof/proof17.html');
+        }
+      });
+   
+      $("#next17").click(function(event) {
+        if (!next17) {
+          next17 = true
+          $("#proof18Prov").load('/IndexProof/proof18.html');
+          $("#proof21Prov").load('/IndexProof/proof21.html');
+          $("#proof24Prov").load('/IndexProof/proof24.html');
+          $("#proof29Prov").load('/IndexProof/proof29.html');
+        }
+      });
+      
+      $("#next29").click(function(event) {
+        if (!next29) {
+          next29 = true
+          $("#proof30Prov").load('/IndexProof/proof30.html');
+          $("#proof33Prov").load('/IndexProof/proof33.html');
+          $("#proof34Prov").load('/IndexProof/proof34.html');
+          $("#proof36Prov").load('/IndexProof/proof36.html');
+        }
+
+      });
+  
+      $("#next36").click(function(event) {
+        if(!next36){
+          next36 = true 
+          $("#proof36aProv").load('/IndexProof/proof36a.html');
+          $("#proof37Prov").load('/IndexProof/proof37.html');
+          $("#proof39Prov").load('/IndexProof/proof39.html');
+          $("#proof39aProv").load('/IndexProof/proof39a.html');
+          $("#proof32Prov").load('/IndexProof/proof32.html');
+          $("#proof41Prov").load('/IndexProof/proof41.html');
+          $("#proof40Prov").load('/IndexProof/proof40.html');
+          $("#proof42Prov").load('/IndexProof/proof42.html');
+        }
+      });
+
+      // $("#next").click(function(event) {
+      // $("#proof0Prov").load('/IndexProof/proof0.html');
+      // $("#proof1Prov").load('/IndexProof/proof1.html');
+      // $("#proof2Prov").load('/IndexProof/proof2.html');
+      // $("#proof3Prov").load('/IndexProof/proof3.html');
+      // $("#proof3aProv").load('/IndexProof/proof3a.html');
+      // });
+ 
+      // $("#next3a").click(function(event) {
+      //   $("#proof4Prov").load('/IndexProof/proof4.html');
+      //   $("#proof6Prov").load('/IndexProof/proof6.html');
+      //   $("#proof8Prov").load('/IndexProof/proof8.html');
+      // });
+
+      // $("#next8").click(function(event) {
+      //   $("#proof13Prov").load('/IndexProof/proof13.html');
+      //   $("#proof15Prov").load('/IndexProof/proof15.html');
+      //   $("#proof16Prov").load('/IndexProof/proof16.html');
+      //   $("#proof17Prov").load('/IndexProof/proof17.html');
+      // });
+   
+      // $("#next17").click(function(event) {
+      //   $("#proof18Prov").load('/IndexProof/proof18.html');
+      //   $("#proof21Prov").load('/IndexProof/proof21.html');
+      //   $("#proof24Prov").load('/IndexProof/proof24.html');
+      //   $("#proof29Prov").load('/IndexProof/proof29.html');
+      // });
+      
+      // $("#next29").click(function(event) {
+      //   $("#proof30Prov").load('/IndexProof/proof30.html');
+      //   $("#proof33Prov").load('/IndexProof/proof33.html');
+      //   $("#proof34Prov").load('/IndexProof/proof34.html');
+      //   $("#proof36Prov").load('/IndexProof/proof36.html');
+      // });
+  
+      // $("#next36").click(function(event) {
+      //   $("#proof36aProv").load('/IndexProof/proof36a.html');
+      //   $("#proof37Prov").load('/IndexProof/proof37.html');
+      //   $("#proof39Prov").load('/IndexProof/proof39.html');
+      //   $("#proof39aProv").load('/IndexProof/proof39a.html');
+      //   $("#proof32Prov").load('/IndexProof/proof32.html');
+      //   $("#proof41Prov").load('/IndexProof/proof41.html');
+      //   $("#proof40Prov").load('/IndexProof/proof40.html');
+      //   $("#proof42Prov").load('/IndexProof/proof42.html');
+      // });
+
+    
+     
+
+
+    //   $("#proof0Prov").load('/IndexProof/proof0.html');
+    //   $("#proof1Prov").load('/IndexProof/proof1.html');
+    //   $("#proof2Prov").load('/IndexProof/proof2.html');
+      // $("#proof3Prov").load('/IndexProof/proof3.html');
+      // $("#proof3aProv").load('/IndexProof/proof3a.html');
+    //   $("#proof4Prov").load('/IndexProof/proof4.html');
+    //   $("#proof6Prov").load('/IndexProof/proof6.html');
+    //   $("#proof8Prov").load('/IndexProof/proof8.html');
+    //   $("#proof13Prov").load('/IndexProof/proof13.html');
+    //   $("#proof15Prov").load('/IndexProof/proof15.html');
+    // // // ------------automatica---------------
+    //   $("#proof16Prov").load('/IndexProof/proof16.html');
+    //   $("#proof17Prov").load('/IndexProof/proof17.html');
+    //   $("#proof18Prov").load('/IndexProof/proof18.html');
+    //   $("#proof21Prov").load('/IndexProof/proof21.html');
+    //   $("#proof24Prov").load('/IndexProof/proof24.html');
+    //   // $("#proof26").load('/IndexProof/proof26.html');
+    //   $("#proof29Prov").load('/IndexProof/proof29.html');
+    //   $("#proof30Prov").load('/IndexProof/proof30.html');
+    //   $("#proof33Prov").load('/IndexProof/proof33.html');
+    //   $("#proof34Prov").load('/IndexProof/proof34.html');
+    //   $("#proof36Prov").load('/IndexProof/proof36.html');
+    //   $("#proof36aProv").load('/IndexProof/proof36a.html');
+    //   $("#proof37Prov").load('/IndexProof/proof37.html');
+    //   // $("#proof38Prov").load('/IndexProof/proof38.html');
+      // $("#proof39Prov").load('/IndexProof/proof39.html');
+    //   $("#proof39aProv").load('/IndexProof/proof39a.html');
+    //   $("#proof32Prov").load('/IndexProof/proof32.html');
+    //   $("#proof41Prov").load('/IndexProof/proof41.html');
+    //   $("#proof40Prov").load('/IndexProof/proof40.html');
+    //   $("#proof40aProv").load('/IndexProof/proof40a.html');
+    })
+
+
+
+  </script>
+  
+<!-- ----------------proof0------------------- -->
+<div class="botones" id="paginaproof0">
+  <button id="before0" type="button" class="beforeBtn" name="proof0" onmousedown="before.play()"> Anterior</button>
+  <button id="next0" type="button" class="nextBtn shake-slow" name="proof0" onmousedown="next.play()">Siguiente</button>
+</div>
+<section id="proof0">
+  <img id="medioProof00" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+  <img id="adelanteProof00" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" alt="">
+  <div id="proof0Prov">
+  </div>
+</section>
+
+<!-- ----------------proof1------------------- -->
+  <div class="botones" id="paginaproof1">
+    <button id="before1" type="button" class="beforeBtn" name="proof1" onmousedown="before.play()"> Anterior</button>
+    <button id="next1" type="button" class="nextBtn" name="proof1" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof1">
+    <img id="atrasProof1" class="back top100" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medioProof1" class="back topmenos100" src="/img/PAG-15/PLANTAS-1.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof1" class="back opacity" src="/img/PAG-2/FONDO-ADELANTE.png" alt="">
+    <div id="proof1Prov">
+     
+    </div>
+  </section>
+
+  <!-- ----------------proof2------------------- -->
+  <div class="botones " id="paginaproof2">
+    <button id="before2" type="button" class="beforeBtn" onmousedown="before.play()" name="proof2">Anterior</button>
+    <button id="next2" type="button" class="nextBtn" name="proof2" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof2">
+    <img  id="atrasProof2" class="back" src="/img/PAG-3/FONDO-ATRAS.png"  style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof2" class="back top100" src="/img/PAG-3/FONDO-ADELANTE.png" style="width: 110%; height: 112%;" alt="">
+    <div id="proof2Prov">
+    </div>
+  </section>
+
+  <!-- ----------------proof3------------------- -->
+  <div class="botones" id="paginaproof3">
+    <button id="before3" type="button" class="beforeBtn" name="proof3" onmousedown="before.play()">Anterior</button>
+    <button id="next3" type="button" class="nextBtn" name="proof3" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof3">
+
+    <div id="proof3Prov">
+    </div>
+  </section>
+
+ <!-- ----------------proof3a---------------------->
+  <div class="botones" id="paginaproof3a">
+    <button id="before3a" type="button" class="beforeBtn" name="proof3a" onmousedown="before.play()">Anterior
+    </button>
+    <button id="next3a" type="button" class="nextBtn" name="proof3a"onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof3a">
+    <!-- <img  id="atrasProof3a" class="back" src="/img/PAG-5/FONDO-ATRAS.png" alt=""> -->
+    <!-- <img  id="medioProof3a" class="back" src="/img/PAG-5/FONDO-MEDIO.png" alt=""> -->
+    <img id="adelanteProof3a" class="back" src="/img/PAG-5/FONDO-ADELANTE.png"   alt="">
+    <div id="proof3aProv">
+    </div>
+  </section>
+
+ <!-- ----------------proof4---------------------->
+  <div class="botones" id="paginaproof4">
+    <button id="before4" type="button" class="beforeBtn" name="proof4" onmousedown="before.play()">Anterior
+    </button>
+    <button id="next4" type="button" class="nextBtn" name="proof4" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof4">
+    <img id="atrasProof4" class="back" src="/img/PAG-3/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof4" class="back" src="/img/PAG-3/FONDO-ADELANTE.png" style="width: 110%; height: 120%; top: -10%; left: -5%;" alt="">
+    <div id="proof4Prov">
+    </div>
+  </section>
+
+  <!-- ----------------proof6---------------------->
+  <div class="botones" id="paginaproof6">
+    <button id="before6" type="button" class="beforeBtn" name="proof6" onmousedown="before.play()">Anterior</button>
+    <button id="next6" type="button" class="nextBtn" name="proof6" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof6">
+    <img id="atras6" class="back" src="./img/PAG-1/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelante6" class="back" src="./img/PAG-1/FONDO-ADELANTE.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt=""> 
+  
+    <div id="proof6Prov">
+    </div>
+  </section>
+
+  <!-- ------------------proof8---------------------->
+  <div class="botones" id="paginaproof8">
+    <button id="before8" type="button" class="beforeBtn" name="proof8" onmousedown="before.play()">Anterior</button>
+    <button id="next8" type="button" class="nextBtn" name="proof8" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof8">
+    <img id="atrasProof8" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medioProof8" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof8" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <div id="proof8Prov">
+    </div>
+  </section>
+
+  <!-- ------------------proof13---------------------->
+  <div class="botones" id="paginaproof13">
+    <button id="before13" type="button" class="beforeBtn" name="proof13" onmousedown="before.play()">Anterior</button>
+    <button id="next13" type="button" class="nextBtn" name="proof13" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof13">
+    <img  id="atrasProof13" class="back" src="/img/PAG-8/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img  id="medioProof13" class="back" src="/img/PAG-8/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img  id="adelanteProof13" class="back" src="/img/PAG-8/FONDO-ADELANTE.png"  alt="" style="width: 110%; height: 110%; top: -5%; left: -5%;">
+    <div id="proof13Prov">
+    </div>
+  </section>
+
+<!-- ------------------proof15---------------------->
+  <div class="botones" id="paginaproof15">
+    <button id="before15" type="button" class="beforeBtn" name="proof15" onmousedown="before.play()">Anterior</button>
+    <button id="next15" type="button" class="nextBtn" name="proof15" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof15">
+    <img id="atrasProof15" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medioProof15" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof15" class="back" src="/img/PAG-2/FONDO-ADELANTE.png"  alt="">
+    <div id="proof15Prov">
+    </div>
+  </section>
+
+<!-- ------------------proof16---------------------->
+  <div class="botones" id="paginaproof16">
+    <button id="before16" type="button" class="beforeBtn" name="proof16" onmousedown="before.play()">Anterior</button>
+    <button id="next16" type="button" class="nextBtn" name="proof16" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof16">
+
+    <div id="proof16Prov">
+    </div>
+  </section>
+
+<!-- ------------------proof17---------------------->
+  <div class="botones" id="paginaproof17">
+    <button id="before17" type="button" class="beforeBtn" name="proof17" onmousedown="before.play()">Anterior</button>
+    <button id="next17" type="button" class="nextBtn" name="proof17" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof17">
+    <img id="atras17" class="back" src="./img/PAG-1/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img style="opacity: 0.8;" id="adelanteProof17" class="back" src="/img/PAG-5/FONDO-ADELANTE.png" alt="">
+    <div id="proof17Prov">
+    </div>
+  </section>
+
+<!-- ------------------proof18---------------------->
+  <div class="botones" id="paginaproof18">
+    <button id="before18" type="button" class="beforeBtn" name="proof18" onmousedown="before.play()">Anterior</button>
+    <button id="next18" type="button" class="nextBtn" name="proof18" onmousedown="next.play()">Siguiente</button>
+  </div>
+
+  <section id="proof18">
+  <img  id="left" src="/img/pngwing1.png" alt="">
+  <img  id="rigth" src="/img/pngwing2.png" alt="">
+  <img id="atrasProof18" class="back" src="/img/PAG-2/FONDO-ATRAS.png" alt="" style="width: 110%; height: 110%; top: -5%; left: -5%;">
+  <img id="medioProof18" class="back" src="/img/PAG-2/FONDO-MEDIO.png" alt="" style="width: 110%; height: 110%; top: -5%; left: -5%;">
+  <img id="adelanteProof18" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" style="top: 0%; left: 0%;" alt="">
+
+  <div id="proof18Prov">
+  </div>
+  </section>
+
+<!-- ------------------proof21---------------------->
+  <div class="botones" id="paginaproof21">
+    <button id="before21" type="button" class="beforeBtn" name="proof21" onmousedown="before.play()">Anterior</button>
+    <button id="next21" type="button" class="nextBtn" name="proof21"onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof21">
+    <img  id="atrasProof21" class="back" src="/img/PAG-8/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img  id="medioProof21" class="back" src="/img/PAG-8/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img  id="adelanteProof21" class="back" src="/img/PAG-8/FONDO-ADELANTE.png" alt="">
+    <div id="proof21Prov">
+    
+
+    </div>
+  </section>
+
+<!-- ------------------proof24---------------------->
+  <div class="botones" id="paginaproof24">
+    <button id="before24" type="button" class="beforeBtn" name="proof24" onmousedown="before.play()" >Anterior</button>
+    <button id="next24" type="button" class="nextBtn" name="proof24" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof24">
+    <img id="atrasProof24" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medioProof24" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof24" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" alt="">
+    <div id="proof24Prov">
+    </div>
+  </section>
+
+<!-- ------------------proof26---------------------->
+  <div class="botones" id="paginaproof26">
+    <button id="before26" type="button" class="beforeBtn" name="proof26" onmousedown="before.play()">Anterior</button>
+    <button id="next26" type="button" class="nextBtn" name="proof26" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof26" id="paginaproof26">
+    <div class="presentacion26">
+      <img id="atrasProof26" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+      <img id="medioProof26" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+      <img id="adelanteProof26" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" alt="">
+      <img class="mano manoanimate"  src="/img/mano.png" alt="">
+      <div class="tituleProof26">
+          <h3>Estas herramientas</h3>
+          <p>permiten identificar las siguientes características:</p>
+      </div>
+      <div class="containerProof26Text">
+        <div class="containerProof26TextP">
+          <div class="containerProof26TextDiv">
+            <div class="containerLetter26 float"> 
+              <h3>C</h3>
+            </div>
+            <div class="text26">
+              <p>Si es familiar hasta el segundo grado de consanguinidad,<br>
+                <h3> segundo de afinidad y primero de civil de un PEP.</h3> <br>
+              </p>
+          </div>
+          </div>
+          <div class="evitaText26">
+            <h3>Evita caer en una trampa</h3>
+            <p>
+              y ten en cuenta esta información <br>
+              haciendo <b>clic sobre cada categoría.</b>
+            </p>
+          </div>
+          <div class="parentezco26">
+            <button class="clasegover" id="parentezco"><img id="logo16parentezco"  src="/img/PAG-13/SEGUN-PARENTESCO.png" alt=""> Según el parentesco</button>
+            <button id="grado" disabled> <img id="logo16grado" src="/img/PAG-13/SEGUN-GRADO.png" alt=""> Según el grado</button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- traer1 -->
+      <div id="consanguinidad26">
+        <div class="tituleconsanguinidad26">
+          <div class="imgconsanguinidad26">
+            <img id="parentezco26" src="/img/PAG-13/SEGUN-PARENTESCO.png" alt="">
+          </div>
+          <div class="textconsanguinidad26">
+            <h3>Según el parentesco: la relación familiar</h3>
+            <p>que existe entre dos personas.</p>
+          </div>
+        </div>
+    
+        <div class="text2Consanguinidad26">
+          <div class="numberConsanguinidad26">
+            <h3>1.</h3>
+          </div>
+          <div class="parrafoConsanguinidad26">
+            <h3>Por consanguinidad <br>
+              o natural</h3>
+            <p>
+              <b style="color: black;"> Relación o conexión que existe <br>
+              entre las personas que descienden </b><br>
+              de un mismo tronco o raíz, o que están <br>
+              unidas por los vínculos de sangre. <br>
+            </p>
+          </div>
+          <div class="imgConsanguinidad26">
+            <img id="familia26" src="/img/PAG-11/1.gif" alt="">
+          </div>
+        </div>
+    
+        <div class="btnProog26">
+          <button id="btn26" class="btn26" ><p>Continuar</p></button>
+        </div>
+      </div>
+    
+      <!-- traerbtnA -->
+      <div id="consanguinidad26a"> 
+        <div class="tituleconsanguinidad26">
+          <div class="imgconsanguinidad26">
+            <img id="parentezco26" src="/img/PAG-13/SEGUN-PARENTESCO.png" alt="">
+          </div>
+          <div class="textconsanguinidad26">
+            <h3>Según el parentesco: la relación familiar</h3>
+            <p>que existe entre dos personas.</p>
+          </div>
+        </div>
+    
+        <div class="text2Consanguinidad26">
+          <div class="numberConsanguinidad26">
+            <h3>2.</h3>
+          </div>
+          <div class="parrafoConsanguinidad26">
+            <h3>Por afinidad o legal</h3>
+            <p>
+              <b style="color: black;"> Es la que existe entre una persona <br>
+              que está o ha estado casada y <br>
+              los cosanguíneos</b> legítimos de su pareja.<br>
+              Cesa por la disolución del matrimonio o <br>
+              la unión marital de hecho.<br>
+            </p>
+          </div>
+          <div class="imgConsanguinidad26">
+            <img id="familia26" src="/img/PAG-11/2.gif" alt="">
+          </div>
+        </div>
+    
+        <div class="btnProog26">
+          <button id="btn26a" class="btn26" ><p>Continuar</p></button>
+        </div>
+      </div>
+
+       <!-- traerbtnB -->
+       <div id="consanguinidad26b"> 
+        <div class="tituleconsanguinidad26">
+          <div class="imgconsanguinidad26">
+            <img id="parentezco26" src="/img/PAG-13/SEGUN-PARENTESCO.png" alt="">
+          </div>
+          <div class="textconsanguinidad26">
+            <h3>Según el parentesco: la relación familiar</h3>
+            <p>que existe entre dos personas.</p>
+          </div>
+        </div>
+    
+        <div class="text2Consanguinidad26">
+          <div class="numberConsanguinidad26">
+            <h3>3.</h3>
+          </div>
+          <div class="parrafoConsanguinidad26">
+            <h3>Civil o por adopción</h3>
+            <p>
+              <b style="color: black;"> Adoptante y adoptivo</b><br>
+              adquieren por la adopción, <br>
+              los derechos y obligaciones <br>
+              de padre o madre e hijo. <br>
+            </p>
+          </div>
+          <div class="imgConsanguinidad26">
+            <img id="familia26" src="/img/PAG-11/3.gif" alt="">
+          </div>
+        </div>
+    
+        <div class="btnProog26">
+          <button id="btn26b" class="btn26" ><p>Volver</p></button>
+        </div>
+      </div>
+
+      <!-- traer3 -->
+      <div id="consanguinidad26dos"> 
+        <div class="tituleconsanguinidad26dos">
+          <div class="imgconsanguinidad26">
+            <img id="parentezco26dos" src="/img/PAG-13/SEGUN-GRADO.png" alt="">
+          </div>
+          <div class="textconsanguinidad26dos">
+            <h3>Según el grado</h3>
+          </div>
+        </div>
+    
+        <div class="grados26dos">
+          <div class="grid center item-1"><h3>PRIMER GRADO</h3></div>
+          <div class="grid center item-2"><h3>SEGUNDO GRADO</h3></div>  
+          <div class="grid tituleLeft item-3"><h3>CONSANGUINIDAD</h3></div>  
+          <div class="grid tituleLeft item-4"><h3>AFINIDAD</h3></div> 
+          <div class="grid tituleLeft item-5"><h3>CIVIL</h3></div> 
+          <div class="grid item-6"><p>Padres Hijos</p></div>  
+          <div class="grid item-7"><p>Padres del conyugue (suegros) Madrastra/padrastro <br> Hijastros/as</p></p></div>  
+          <div class="grid item-8"><p>Abuelos <br>Hermanos <br>Nietos</p></div>  
+          <div class="grid item-9"><p>Abuelos del conyugue <br> Hermanos del conyugue <br> Conyugues de los hermanos  </p></div> 
+          <div class="grid item-10"><p>Padres adoptantes <br>Hijos adoptivos</p></div>
+        </div>
+        
+        <div class="btnProog26dos">
+          <button id="btn26dos" class="btn26dos"><p>Volver</p></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- ------------------proof29---------------------->
+  <div class="botones" id="paginaproof29">
+    <button id="before29" type="button" class="beforeBtn" name="proof29" onmousedown="before.play()">Anterior</button>
+    <button id="next29" type="button" class="nextBtn" name="proof29" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof29">
+    <img id="atrasProof29" class="back" src="/img/PAG-2/FONDO-ATRAS.png" alt="">
+    <img id="medioProof29" class="back" src="/img/PAG-2/FONDO-MEDIO.png" alt="">
+    <img id="adelanteProof29" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" alt="">
+  
+    <div id="proof29Prov">
+    </div>
+  </section>
+
+<!-- ------------------proof30---------------------->
+  <div class="botones" id="paginaproof30">
+    <button id="before30" type="button" class="beforeBtn" name="proof30" onmousedown="before.play()">Anterior</button>
+    <button id="next30" type="button" class="nextBtn" name="proof30" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof30">
+
+    <div id="proof30Prov">
+    </div>
+  </section>
+
+  <!-- ------------------proof33---------------------->
+  <div class="botones" id="paginaproof33">
+    <button id="before33" type="button" class="beforeBtn" name="proof33" onmousedown="before.play()">Anterior</button>
+    <button id="next33" type="button" class="nextBtn" name="proof33" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof33">
+    <img  id="atrasProof33" class="back" src="/img/PAG-8/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img  id="medioProof33" class="back" src="/img/PAG-8/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img  id="adelanteProof33" class="back" src="/img/PAG-8/FONDO-ADELANTE.png" alt="">
+    <div id="proof33Prov">
+    </div>
+  </section>
+
+<!-- ------------------proof34---------------------->
+  <div class="botones" id="paginaproof34">
+    <button id="before34" type="button" class="beforeBtn" name="proof34" onmousedown="before.play()">Anterior</button>
+    <button id="next34" type="button" class="nextBtn" name="proof34" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof34">
+    <img id="atrasProof34" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medioProof34" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="fondo34" class="back" src="./img/PAG-1/FONDO-PARA-TEXTO.png"  alt=""> 
+
+    <div id="proof34Prov">
+    </div>
+  </section>
+
+<!-- ------------------proof36---------------------->
+  <div class="botones" id="paginaproof36">
+    <button id="before36" type="button" class="beforeBtn" name="proof36" onmousedown="before.play()" >Anterior</button>
+    <button id="next36" type="button" class="nextBtn" name="proof36" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof36">
+    <img id="atrasProof36" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medioProof36" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof36" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" alt="">
+
+    <div id="proof36Prov">
+    </div>
+  </section>
+
+  <!-- ------------------proof36a---------------------->
+  <div class="botones" id="paginaproof36a">
+    <button id="before36a" type="button" class="beforeBtn" name="proof36a" onmousedown="before.play()">Anterior</button>
+    <button id="next36a" type="button" class="nextBtn" name="proof36a" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof36a">
+    <img id="atrasProof36a" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;"  alt="">
+    <!-- <img id="medioProof36a" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt=""> -->
+    <img id="adelanteProof36a" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" alt="">
+    <img id="medioProof36a" class="back" src="/img/PAG-15/PLANTAS-1.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="matas36" class="back " src="/img/PAG-15/PLANTAS-2.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+
+    <div id="proof36aProv">
+    </div>
+  </section>
+
+  <!-- ------------------proof37---------------------->
+  <div class="botones" id="paginaproof37">
+    <button id="before37" type="button" class="beforeBtn" name="proof37" onmousedown="before.play()">Anterior</button>
+    <button id="next37" type="button" class="nextBtn" name="proof37" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof37">
+    <img id="atrasProof37" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medioProof37" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof37" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" alt="">
+
+    <div id="proof37Prov">
+  
+    </div>
+  </section>
+
+  <!-- ------------------proof38---------------------->
+  <div class="botones" id="paginaproof38">
+    <button id="before38" type="button" class="beforeBtn" name="proof38" onmousedown="before.play()">Anterior</button>
+    <button id="next38" type="button" class="nextBtn" name="proof38" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof38">
+    <img  id="atrasProof38" class="back" src="/img/PAG-3/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof38" class="back" src="/img/PAG-3/FONDO-ADELANTE.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+
+    <div id="proof38Prov">
+      <!-- ------emergentes----------- -->
+      <div id="puntos38ID" class="puntos38 emergente">
+        <img id="atras38" class="back" src="./img/PAG-1/FONDO-ATRAS.png" alt="">
+        <img id="adelante38" class="back" src="./img/PAG-1/FONDO-ADELANTE.png" alt=""> 
+        <img  id="bien38" class="back" src="/img/PAG-6/CORRECTO/FONDO-TEXTO.png" alt=""> 
+        <div class="emergenteContainer">
+          <img id="correcto38" src="/img/PAG-6/CORRECTO/ICONO-BIEN.png" alt=""> 
+          <h3>¡Muy bien,<br> 
+            </h3>
+          <p>
+            Todo buen cazador identifica <br>
+            las trampas en cada paso que da.
+          </p>
+        </div>
+      </div>
+
+      <!---------endEmergente---------- -->
+
+      <div id="noPuntos38ID" class="noPuntos38 emergente">
+        <img id="adelanteProof38" class="back" src="/img/PAG-5/FONDO-ADELANTE.png" alt="">
+        <img  id="bien38" class="back" src="/img/PAG-6/INCORRECTO/FONDO.png" alt=""> 
+        <div class="emergenteContainer">
+          <img id="incorrecto6" src="/img/PAG-6/INCORRECTO/ICONO-MAL.png" alt=""> 
+          <h3>¡Hmm no,<br>
+            revisa bien lo visto hasta ahora!
+           </h3>
+          <p>Vamos a intentarlo de nuevo.</p>
+        </div>
+      </div>
+
+      <div class="presentacion38">
+        <div class="tituleProof38">
+          <p>¡Es momento de seguir luchando</p>
+          <h3>contra lo ilícito!</h3>
+        </div>
+        <div class="containerProof38">
+          <p><b style="font-size: larger;">Elige cuál de los siguientes procesos NO es necesario</b><br>
+            para prevenir que ingresen al Banco o a la Fiduciaria recursos provenientes <br>
+            de actividades relacionadas con el lavado
+            de activos y/o de la financiación del terrorismo:</p>
+        </div>
+      
+        <div class="gameShoot">
+          <div class="gameShootDiv">
+            <div id="letterShootA"  class="letterShoot"> 
+              A 
+            </div>
+            <div class="textShoot">
+              <p>Conocer el origen de sus recursos, procedencia de ingresos y actividad <br>
+                económica laboral o profesional.</p>
+            </div>
+          </div>
+          <div class="gameShootDiv">
+            <div id="letterShootB"  class="letterShoot">
+              B
+            </div>
+            <div class="textShoot">
+              <p>Identificar las zonas de riesgo LA/FT en donde el Banco y la Fiduciaria <br>
+                tienen ubicadas sus oficinas.</p>
+            </div>
+          </div>
+          <div class="gameShootDiv">
+            <div id="letterShootC"  class="letterShoot">
+              C
+            </div>
+            <div class="textShoot">
+              <p>Actualizar mínimo anualmente la información legal y financiera
+                de los clientes.</p>
+            </div>
+          </div>
+          <div class="gameShootDiv">
+            <div id="letterShoot4"  class="letterShoot">
+              D
+            </div>
+            <div class="textShoot">
+              <p>Conocer el plan de continuidad del negocio del Banco y de
+                la Fiduciaria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------proof39---------------------->
+  <div class="botones" id="paginaproof39">
+    <button id="before39" type="button" class="beforeBtn" name="proof39" onmousedown="before.play()">Anterior</button>
+    <button id="next39" type="button" class="nextBtn" name="proof39" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof39">
+    <img id="atras39" class="back" src="./img/PAG-1/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medio39" class="back" src="./img/PAG-1/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelante39" class="back" src="./img/PAG-1/FONDO-ADELANTE.png" alt=""> 
+    <img id="fondo39" class="back" src="./img/PAG-1/FONDO-PARA-TEXTO.png" alt=""> 
+
+    <div id="proof39Prov">
+  
+    </div>
+  </section>
+
+  <!-- ------------------proof39a---------------------->
+  <div class="botones" id="paginaproof39a">
+    <button id="before39a" type="button" class="beforeBtn" name="proof39a" onmousedown="before.play()">Anterior</button>
+    <button id="next39a" type="button" class="nextBtn" name="proof39a" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof39a">
+    <img id="atras39a" class="back" src="./img/PAG-1/FONDO-ATRAS.png" alt="">
+    <img id="adelante39a" class="back" src="./img/PAG-1/FONDO-ADELANTE.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt=""> 
+    <img id="adelanteProo39a" class="back" src="/img/PAG-2/FONDO-ADELANTE.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="palma39a" class="floatall" src="./img/PAG-1/PALMA-1.png" alt=""> 
+    <div id="proof39aProv">
+  
+    </div>
+  </section>
+
+  <!-- ------------------proof32---------------------->
+  <div class="botones" id="paginaproof32">
+    <button id="before32" type="button" class="beforeBtn" name="proof32" onmousedown="before.play()">Anterior</button>
+    <button id="next32" type="button" class="nextBtn" name="proof32" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof32">
+    <img  id="atras32" class="back" src="/img/PAG-8/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img  id="adelante32" class="back" src="/img/PAG-8/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img  id="adelanteProof33" class="back" src="/img/PAG-8/FONDO-ADELANTE.png" alt="">
+
+    <div id="proof32Prov">
+  
+    </div>
+  </section>
+
+<!-- ------------------proof41---------------------->
+  <div class="botones" id="paginaproof41">
+    <button id="before41" type="button" class="beforeBtn" name="proof41" onmousedown="before.play()">Anterior</button>
+    <button id="next41" type="button" class="nextBtn" name="proof41" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof41">
+    <img id="atras41" class="back" src="./img/PAG-1/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelante41" class="back" src="./img/PAG-15/FONDO-MEDIA.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt=""> 
+    <div id="proof41Prov">
+  
+    </div>
+  </section>
+
+  <!-- ------------------proof40---------------------->
+  <div class="botones" id="paginaproof40">
+    <button id="before40" type="button" class="beforeBtn" name="proof40" onmousedown="before.play()">Anterior</button>
+    <button id="next40" type="button" class="nextBtn" name="proof40" onmousedown="next.play()">Siguiente</button>
+  </div>
+  <section id="proof40">
+    <img id="atrasProof40" class="back" src="/img/PAG-2/FONDO-ATRAS.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="medioProof40" class="back" src="/img/PAG-2/FONDO-MEDIO.png" style="width: 110%; height: 110%; top: -5%; left: -5%;" alt="">
+    <img id="adelanteProof40" class="back" src="/img/PAG-2/FONDO-ADELANTE.png"  alt="">
+    <div id="proof40Prov">
+  
+    </div>
+  </section>
+
+<!-- ------------------proof42---------------------->
+    <div class="botones" id="paginaproof42">
+      <button id="before42" type="button" class="beforeBtn" name="proof42" onmousedown="before.play()">Anterior</button>
+      <button id="next42" type="button" class="nextBtn" name="proof42" onmousedown="next.play()">Siguiente</button>
+    </div>
+
+  </section>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/paralax.js"></script>
+<script src="/js/move18.js"></script>
+<script src="/js/estructurando.js"></script>
+<script src="/js/js6.js"></script>
+<script src="/js/js21.js"></script>
+<script src="/js/js24.js"></script>
+<script src="/js/js26.js"></script>
+<script src="/js/js33.js"></script>
+<script src="/js/js38.js"></script>
+<script src="/js/js32.js"></script>
+
+<!-- <script src="./js/j16y17Sonidos.js"></script>
+<script src="./js/j15Sonidos.js"></script> -->
+<script src="./js/sonidos.js"></script>
+<script src="js.js"></script>
+</html>

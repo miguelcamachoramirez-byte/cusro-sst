@@ -1,0 +1,52 @@
+#proof44{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 100%;
+    /* left: 0%; */
+    z-index:1;
+}
+
+.presentacion44 {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+.sabiasQue{
+    text-align: left;
+    margin-left: 15%;
+}
+
+.sabiasQue h2{
+    color: rgb(0,128,74);
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.sabiasQue p{
+    color: rgb(51,51,51); 
+    font-size: 3rem;  
+}
+
+.sabiasQue span{
+    color: black;
+    font-weight: 900;
+}
+
+
+#computador44{
+    position: absolute;
+    top: 25vh;
+    right: -5rem;
+    width: 40rem;
+}

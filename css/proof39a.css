@@ -1,0 +1,102 @@
+#proof39a{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+    top: 100%;
+    /* top: 0%; */
+
+}
+
+.presentacion39a {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    width: 100vw;
+    z-index: 10;
+}
+
+.titule39a{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.titule39a h3{
+    font-size: 3rem;
+}
+
+
+.containerProof39a{
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    text-align: left;
+}
+
+.move39dos{
+    position: relative;
+    width:100%;
+    left: 100%;
+}
+
+.containerProof39ados{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    text-align: left;
+}
+
+.containerProof39ados h3{
+    font-size: 2rem;
+    margin-bottom: -0.2rem;
+}
+
+.div39{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+
+.div39 p{
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+.div39 span{
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.div39 img{
+    width: 8rem;
+    margin-right: 1rem;
+}
+
+#div39uno{
+    top: 60%;
+    left: 5%;
+}
+#div39dos{
+    top: 60%;
+    left: 45%;
+    display: flex;
+    align-items: flex-start !important;
+}
+#div39dos p{
+    padding-top: 2rem !important;
+}
+#div39tres{
+    top: 80%;
+    left: 5%;
+}
+
+#palma39a{
+    position: absolute;
+    width: 25rem;
+    transform: rotate(10deg);
+    right:-16rem;
+    top:30%;
+}

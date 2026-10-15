@@ -1,0 +1,78 @@
+#proof30{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+}
+
+.presentacion30 {
+    background: linear-gradient(27deg, #ffffff 20%, rgba(225,225,225,1) 100%, rgb(194, 194, 194) 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+/* es reempplazado */
+.tituleProof30{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: left;
+    width: 100%;
+}
+
+.tituleProof30 h3{
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin: 0;
+}
+
+.tituleProof30 p{
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    margin: 0;
+}
+
+.containerProof30{ 
+    position: absolute;
+    display: flex;
+    top: 15%;
+    margin: auto;
+    width: 100%;
+    height: 85%;
+    padding-left: 5%;
+}
+
+.containerProof30Text{
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    text-align: left;
+}
+
+.containerProof30Text2{
+    display: none;
+    top: 23%;
+    left: 5%;
+    position: absolute;
+    text-align: left;
+}
+
+
+#proof30Img{
+    width: 43rem;
+}
+
+
+.containerProof30Img{
+    margin: auto;
+    margin-right: -3rem;
+}

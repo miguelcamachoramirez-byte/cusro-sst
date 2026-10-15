@@ -1,0 +1,32 @@
+#proof49{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index:1;
+}
+
+.presentacion49 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+.dilgencie49{
+    display: flex;
+    align-items: center;
+}
+
+.dilgencie49 img{
+    width: 30rem;
+}
+
+.dilgencie49 h3{
+    font-size: 3rem;
+}

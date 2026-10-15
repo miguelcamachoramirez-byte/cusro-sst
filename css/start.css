@@ -1,0 +1,359 @@
+#start{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* top: 100%; */
+    top: 0;
+    z-index: 9;
+}
+
+.presentacion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#cazadores{
+    width: 32rem;
+    position: absolute;
+    left: 5rem;
+}
+
+#de{
+    width: 3rem;
+    position: absolute;
+    left: 13rem;
+    top: 8rem;
+}
+
+#riesgos{
+    width: 15rem;
+    position: absolute;
+    top: 8rem;
+    left: 16rem;
+}
+
+.tituleStart{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+}
+
+h3{
+    font-family: 'Fredoka One';
+}
+p{
+    font-size: 1.5rem;
+    margin: 0 !important;
+    line-height: 2rem;
+}
+#proof41 .tituleProof41 p{
+    line-height: 6rem;
+}
+#proof18 .containerProof18 p{
+    font-size: 1.2rem;
+}
+.back {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sonido{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+
+}
+
+.sonido img{
+    width: 4rem;
+}
+
+.containerStart{
+    position: absolute;
+    top:25rem;
+    width: 40%;
+    left: 8rem;
+}
+.containerStart h3{
+    font-size: 2rem;
+    margin: 0;
+}
+.containerStart p{
+    margin-bottom: 2rem !important;
+    line-height: 1.6rem;
+
+}
+
+
+#palma1{
+    position: absolute;
+    bottom: -6rem;
+    width: 20rem;
+    right: 13rem;
+}
+
+#palma2{
+    position: absolute;
+    bottom: -6rem;
+    width: 10rem;
+    right: 18rem;
+}
+#palma3{
+    position: absolute;
+    bottom: -8rem;
+    width: 20rem;
+    right:2rem;
+}
+#palma4{
+    position: absolute;
+    top: -8rem;
+    width: 15rem;
+
+}
+
+.presentacionlogo{
+    position: absolute;
+}
+
+.presentacionlogo img{
+    width: 12rem;
+}
+
+.presentacionlogo {
+    margin: 2rem;
+}
+
+
+#logomargen{
+    border-left: 1px solid white !important;
+}
+
+.palma1{
+    animation: palma1 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes palma1 {
+	0% {
+		transform: rotate(0deg) translatex(0px) ;
+	}
+
+	100% {
+        transform: rotate(10deg) translatex(100px);
+
+	}
+}
+
+.palma2{
+    animation: palma2 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes palma2 {
+	0% {
+		transform: rotate(0deg) translatex(0px) ;
+	}
+
+	100% {
+        transform: rotate(-40deg) translatex(-100px);
+
+	}
+}
+
+.palma3{
+    animation: palma3 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+#palma3{
+    position: absolute;
+    bottom: -8rem;
+    width: 20rem;
+    right:2rem;
+}
+
+
+.palma4{
+    animation: palma4 3s ease-in-out infinite;
+    animation-fill-mode: forwards
+}
+
+@keyframes palma4 {
+	0% {
+		transform: rotate(0deg) translatex(0px) ;
+	}
+    50%{
+        transform: rotate(0deg) translatex(0px) ;
+    }
+	100% {
+
+	}
+}
+
+.palma3{
+    animation: palma3 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes palma3 {
+	0% {
+		transform: rotate(0deg) translatex(0px) ;
+	}
+
+	100% {
+        transform: rotate(5deg) translatex(50px);
+
+	}
+}
+
+
+.medio{
+    animation: medio 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes medio {
+	0% {
+		transform: translateY(0px) translatex(0px) ;
+
+	}
+
+	100% {
+        transform: translateY(-20px) translatex(-80px);
+        width: 120%;
+        height: 120%;
+
+	}
+}
+
+.fondo1{
+    animation: fondo1 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes fondo1 {
+	0% {
+		transform:  translatex(0px) ;
+
+	}
+
+	100% {
+        transform: translatex(-80px);
+	}
+}
+
+
+
+
+.palma1Out{
+    animation: palma1Out 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes palma1Out {
+	0% {
+        transform: rotate(10deg) translatex(100px);
+	}
+
+	100% {
+		transform: rotate(0deg) translatex(0px) ;
+
+	}
+}
+
+.palma2Out{
+    animation: palma2Out 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes palma2Out {
+	0% {
+        transform: rotate(-40deg) translatex(-100px);
+
+	}
+
+	100% {
+		transform: rotate(0deg) translatex(0px) ;
+
+
+	}
+}
+
+.palma3Out{
+    animation: palma3Out 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes palma3Out {
+	0% {
+        transform: rotate(5deg) translatex(50px);
+	}
+
+	100% {
+		transform: rotate(0deg) translatex(0px) ;
+	}
+}
+
+.palma4Out{
+    animation: palma4Out 3s ease-in-out infinite;
+    animation-fill-mode: forwards
+}
+
+@keyframes palma4Out {
+	0% {
+		transform: rotate(0deg) translatex(0px) ;
+	}
+    50%{
+        transform: rotate(0deg) translatex(0px) ;
+    }
+	100% {
+
+	}
+}
+
+
+
+
+.medioOut{
+    animation: medioOut 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes medioOut {
+	0% {
+        transform: translateY(-20px) translatex(-80px);
+        width: 120%;
+        height: 120%;
+
+	}
+
+	100% {
+		transform: translateY(0px) translatex(0px) ;
+	}
+}
+
+.fondo1Out{
+    animation: fondo1Out 1s ease-in-out ;
+    animation-fill-mode: forwards
+}
+
+@keyframes fondo1Out {
+	0% {
+        transform: translatex(-80px);
+
+	}
+
+	100% {
+		transform:  translatex(0px) ;
+
+	}
+}
+
+
+

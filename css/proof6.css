@@ -1,0 +1,194 @@
+#proof6{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 100%;
+    /* left: 0%; */
+    
+}
+
+.presentacion6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.presentacion6 p{
+    font-size: 1.1rem;
+}
+
+.tituleProof6{
+    position: absolute;
+    top: 13%;
+    left: 3rem;
+}
+
+.tituleProof6 h3{
+    font-size: 4.2rem;
+    margin-bottom: -0.1rem;
+}
+.tituleProof6 p{
+    font-size: 1.5rem;
+}
+
+.containerProof6{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    top: 29%;
+}
+
+.gameHunt{
+    width: 25%;
+    border-right: 3px solid red;
+
+}
+.gameHuntText{
+    width: 75%;
+    padding-left: 2rem;
+}
+
+.gameHuntText p{
+    font-size: 1.35rem;
+}
+
+.gameHuntTextMove{
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0 3rem;
+    position: relative;
+    min-height: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.gameHuntTextMoveGray{
+    background-color:rgba(255, 255, 255, 0.137);
+    position: relative;
+    padding-left: 2rem;
+    min-height: 7rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#gameHuntTextMoveGrayUno{
+    position: relative;
+    padding-left: 2rem;
+    min-height: 7rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.gameHuntMove{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    min-height: 6rem;
+}
+
+.gameHuntMove img{
+    width: 5rem;
+    cursor: crosshair;
+    cursor: move;
+    margin-bottom: 0.1rem;
+}
+
+.contenedorPieza{
+    position: absolute;
+    border-style: dashed;
+    width: 6rem;
+    height: 7rem;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+}
+
+
+#pieza1{
+    height: 5.8rem;
+}
+
+#pieza4{
+    height: 5.8rem;
+    width: 6rem;
+}
+.fondo{
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.contenedorPieza .piezas{
+    width: 5rem;
+    z-index: 50;
+
+}
+
+.contenedorPiezas{
+    min-height: 6rem;
+    min-width: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+
+/* --------------emergentes-------------*/
+
+.puntos6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100vw;
+    position: absolute;
+    z-index: 70 ;
+    /* left: 0%; */
+    left: 100%;
+}
+
+#correcto6{
+    width: 20rem;
+}
+
+.emergenteContainer h3{
+    font-size: 2.5rem;
+}
+
+
+.noPuntos6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100vw;
+    position: absolute;
+    z-index: 70 ;
+    /* left: 0%; */
+    left: 100%;
+
+}
+
+#incorrecto6{
+    width: 20rem;
+}

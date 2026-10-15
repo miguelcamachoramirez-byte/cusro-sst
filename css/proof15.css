@@ -1,0 +1,147 @@
+#proof15{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    /* top: 0%; */
+    z-index:1;
+}
+
+.presentacion15 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.tituleProof15{
+    position: absolute;
+    /* top: 20%; */
+    top: -100%;
+    left: 3.5rem;
+    text-align: left;
+}
+.tituleProof15 p{
+    font-size:2.8rem;
+    color: white ;
+    line-height: 3rem;
+}
+
+.tituleProof15 h3{
+    font-size:3.5rem;
+    margin-top: -1rem;
+    color: white ;
+}
+
+.containerProof15{
+    position: absolute;
+    display: flex;
+    text-align: left;
+    width: 90%;
+    align-items: center;
+    top:34%;
+    left:100%;
+}
+
+.containerProof15Text{
+    width: 60%;
+}
+
+.containerProof15TextP{
+    margin: 2rem 0;
+}
+
+.containerProof15TextTable p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+
+.containerProof15Img{
+    width: 30%;
+    margin: auto;
+}
+
+#provisional{
+    width: 18rem;
+}
+
+.ruta{
+    margin-bottom: 1rem;
+}
+
+
+
+#proof15 .tituleProof15{
+    overflow: initial;
+}
+#proof15 .tituleProof15 h3{
+    background-color: #bf2f41;
+    width: 280px;
+    margin: auto;
+    position: relative;
+    overflow: initial;
+}
+#proof15 .tituleProof15 h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 55px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+#proof15 .tituleProof15 h3:after{
+    content: "";
+    border-top: 55px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}
+
+.tituleProof15animate{
+    animation: tituleProof15animate 1.2s ease-in-out ;    animation-fill-mode: forwards
+    
+}
+
+
+@keyframes tituleProof15animate {
+	0% {
+        top: -100%;
+	}
+
+    100% {
+        top: 20%;
+    }
+}
+.containerProof15animate{
+    animation: containerProof15animate 1s ease-in-out ;
+    animation-fill-mode: forwards
+   
+}
+
+
+@keyframes containerProof15animate {
+	0% {
+        left: 100%;
+        /* transform: rotate(369deg); */
+	}
+
+    100% {
+        left: 5%;
+    }
+}
+
+.pag9img1{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+
+}
+

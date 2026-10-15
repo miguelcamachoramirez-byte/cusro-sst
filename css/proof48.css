@@ -1,0 +1,68 @@
+#proof48{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    z-index:1;
+}
+
+.presentacion48 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    margin-top: 5vh;
+    font-size:2.5rem;
+
+}
+
+
+
+.queVisite48{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.Registre48{
+    text-align: right;
+}
+
+#cel148{
+    position: absolute;
+    top: calc(50vh);
+    right: 10%;
+    width: 20rem;
+    height: 20rem;
+}
+
+#cel248{
+    position: absolute;
+    bottom: calc(40vh);
+    left: 15%;
+    width: 20rem;
+    height: 20rem;
+}
+
+@media (max-width: 1200px) {
+    #cel148{
+        right: 0%;
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    #cel248{
+        left: 0%;
+        width: 15rem;
+        height: 15rem;
+    }
+    .presentacion48 {
+        font-size:2rem;
+        margin-left: -3rem;
+    }
+    
+}
+
+

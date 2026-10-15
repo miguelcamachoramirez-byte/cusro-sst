@@ -1,0 +1,69 @@
+Sara Betancourt, [14.10.21 08:39]
+Degradado a naranja
+
+Sara Betancourt, [14.10.21 08:41]
+R:255 G:123 B:8
+
+Sara Betancourt, [14.10.21 08:42]
+#ff7b08
+
+Sara Betancourt, [14.10.21 08:42]
+R:255 G:138 B:8
+
+Sara Betancourt, [14.10.21 08:43]
+#ff8a08
+
+Sara Betancourt, [14.10.21 08:43]
+Verde
+
+Sara Betancourt, [14.10.21 08:44]
+R:0 G:128 B:74
+
+Sara Betancourt, [14.10.21 08:44]
+#00804a
+
+Sara Betancourt, [14.10.21 08:46]
+Degradado a gris
+
+Sara Betancourt, [14.10.21 08:48]
+R:225 G:225 B:225
+
+Sara Betancourt, [14.10.21 08:49]
+#ffffff
+
+Sara Betancourt, [14.10.21 08:49]
+R:194 G:194 B:194
+
+Sara Betancourt, [14.10.21 08:50]
+#c2c2c2
+
+Sara Betancourt, [14.10.21 08:50]
+-------TEXTOS--------
+
+Sara Betancourt, [14.10.21 08:51]
+NARANJA
+
+R:255 G:123 B:8
+
+#ff7b08
+
+Sara Betancourt, [14.10.21 08:51]
+VERDE
+
+R:0 G:128 B:74
+
+#00804a
+
+Sara Betancourt, [14.10.21 08:52]
+BLANCO
+
+R:225 G:225 B:225
+
+#ffffff
+
+Sara Betancourt, [14.10.21 08:53]
+GRIS OSCURO
+
+R:51 G:51 B:51
+
+#333333

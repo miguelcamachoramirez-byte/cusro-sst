@@ -1,0 +1,62 @@
+
+Degradado a naranja
+
+
+R:255 G:123 B:8
+
+
+#ff7b08
+
+
+R:255 G:138 B:8
+
+#ff8a08
+
+
+Verde
+
+
+R:0 G:128 B:74
+
+
+background: linear-gradient(27deg, #ffffff 20%, rgba(225,225,225,1) 100%, rgb(194, 194, 194) 100%);
+
+#00804a
+
+
+Degradado a gris
+
+R:225 G:225 B:225
+
+#ffffff
+
+R:194 G:194 B:194
+
+
+#c2c2c2
+
+-------TEXTOS--------
+
+NARANJA
+color: rgb(255, 123, 8);
+
+#ff7b08
+
+
+VERDE
+
+color: rgb(0,128,74);
+
+#00804a
+
+BLANCO
+
+R:225 G:225 B:225
+
+#ffffff
+
+
+GRIS OSCURO
+color: rgb(51,51, 51);
+
+#333333

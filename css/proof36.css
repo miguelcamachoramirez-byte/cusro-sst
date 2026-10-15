@@ -1,0 +1,22 @@
+#proof36{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+    top: 100%;
+    /* top: 0%; */
+
+}
+
+.presentacion36 {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    width: 100vw;
+    z-index: 10;
+}
+
+.titule36{
+    position: absolute;
+}
